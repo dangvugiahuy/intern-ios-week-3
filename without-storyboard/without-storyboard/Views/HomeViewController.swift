@@ -19,6 +19,17 @@ class HomeViewController: UIViewController {
         return button
     }()
     
+    private let backButton: UIButton = UIButton.createBackButton()
+    
+    private let addFavoriteListButton: UIButton = {
+        let addFavoriteListButton: UIButton = UIButton()
+        let config = UIImage.SymbolConfiguration(pointSize: 30, weight: .medium, scale: .default)
+        let icon = UIImage(systemName: "heart", withConfiguration: config)
+        addFavoriteListButton.setImage(icon, for: .normal)
+        addFavoriteListButton.tintColor = UIColor.black
+        return addFavoriteListButton
+    }()
+    
     private let demoImage: UIImageView = {
         let demoImage: UIImageView = UIImageView()
         demoImage.image = UIImage(named: "demoImage")
@@ -90,6 +101,13 @@ At the heart of this exhibition lies the inspiration that flows from the depths 
                                         bigTitle.bottomAnchor.constraint(equalTo: blackLine2.topAnchor, constant: -10),
                                         bigTitle.topAnchor.constraint(equalTo: demoImage.bottomAnchor, constant: 50)])
         
+        constraints.append(contentsOf: [backButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
+                                        backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+                                        backButton.widthAnchor.constraint(equalToConstant: 70)])
+        
+//        constraints.append(contentsOf: [addFavoriteListButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
+//                                        addFavoriteListButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)])
+        
         NSLayoutConstraint.activate(constraints)
     }
     
@@ -101,25 +119,9 @@ At the heart of this exhibition lies the inspiration that flows from the depths 
         view.addSubview(subTitle)
         view.addSubview(blackLine2)
         view.addSubview(bigTitle)
+        view.addSubview(backButton)
+//        view.addSubview(addFavoriteListButton)
     }
 }
 
-extension UIImageView {
-    static func createBlackLine() -> UIImageView {
-        let blackLine: UIImageView = UIImageView()
-        blackLine.contentMode = .scaleAspectFill
-        blackLine.backgroundColor = UIColor.black
-        blackLine.translatesAutoresizingMaskIntoConstraints = false
-        return blackLine
-    }
-}
 
-extension UILabel {
-    static func createTitle(content: String, titleFont: UIFont) -> UILabel {
-        let title: UILabel = UILabel()
-        title.text = content
-        title.font = titleFont
-        title.translatesAutoresizingMaskIntoConstraints = false
-        return title
-    }
-}
