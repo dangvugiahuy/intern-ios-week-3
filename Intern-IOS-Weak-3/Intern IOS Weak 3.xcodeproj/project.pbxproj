@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */; };
+		293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */; };
+		293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */; };
+		293296982C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296962C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib */; };
+		2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932969A2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift */; };
+		2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2932969B2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib */; };
+		293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */; };
+		293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */; };
 		29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9702C6CA57500D948C6 /* AppDelegate.swift */; };
 		29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */; };
 		29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9742C6CA57500D948C6 /* ViewController.swift */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UITableViewController.swift; sourceTree = "<group>"; };
+		293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UITableViewController.xib; sourceTree = "<group>"; };
+		293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UICollectionViewController.swift; sourceTree = "<group>"; };
+		293296962C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UICollectionViewController.xib; sourceTree = "<group>"; };
+		2932969A2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UIStackViewController.swift; sourceTree = "<group>"; };
+		2932969B2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UIStackViewController.xib; sourceTree = "<group>"; };
+		2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UIScrollViewController.swift; sourceTree = "<group>"; };
+		293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UIScrollViewController.xib; sourceTree = "<group>"; };
 		29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intern IOS Weak 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FDE9702C6CA57500D948C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2932968B2C6CB81D00F6C8D2 /* UITableViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */,
+				293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */,
+			);
+			path = UITableViewGroup;
+			sourceTree = "<group>";
+		};
+		293296942C6CB9C600F6C8D2 /* UICollectionViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */,
+				293296962C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib */,
+			);
+			path = UICollectionViewGroup;
+			sourceTree = "<group>";
+		};
+		293296992C6CBA2300F6C8D2 /* UIStackViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				2932969A2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift */,
+				2932969B2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib */,
+			);
+			path = UIStackViewGroup;
+			sourceTree = "<group>";
+		};
+		2932969E2C6CBAE900F6C8D2 /* UIScrollViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */,
+				293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */,
+			);
+			path = UIScrollViewGroup;
+			sourceTree = "<group>";
+		};
 		29FDE9642C6CA57500D948C6 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +112,10 @@
 				29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */,
 				29FDE9742C6CA57500D948C6 /* ViewController.swift */,
 				29FDE9762C6CA57500D948C6 /* Main.storyboard */,
+				2932968B2C6CB81D00F6C8D2 /* UITableViewGroup */,
+				293296942C6CB9C600F6C8D2 /* UICollectionViewGroup */,
+				293296992C6CBA2300F6C8D2 /* UIStackViewGroup */,
+				2932969E2C6CBAE900F6C8D2 /* UIScrollViewGroup */,
 				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
 				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
 				29FDE97E2C6CA57700D948C6 /* Info.plist */,
@@ -126,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FDE97A2C6CA57700D948C6 /* Assets.xcassets in Resources */,
+				2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */,
 				29FDE97D2C6CA57700D948C6 /* Base in Resources */,
+				293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */,
+				293296982C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib in Resources */,
 				29FDE9782C6CA57500D948C6 /* Base in Resources */,
+				293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */,
 				29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
+				293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */,
+				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
+				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,
 				29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
