@@ -31,10 +31,16 @@ extension UILabel {
 extension UIButton {
     static func createBackButton() -> UIButton {
         let button: UIButton = UIButton()
-        let config = UIImage.SymbolConfiguration(pointSize: 30, weight: .medium, scale: .default)
+        let config = UIImage.SymbolConfiguration(pointSize: 40, weight: .unspecified, scale: .unspecified)
         let icon = UIImage(systemName: "arrow.up.left", withConfiguration: config)
         button.setImage(icon, for: .normal)
         button.tintColor = UIColor.black
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
+    }
+    
+    static func autoLayoutBackButton(button: UIButton, view: UIView) -> [NSLayoutConstraint] {
+        let sequence = [button.topAnchor.constraint(equalTo: view.topAnchor, constant: 60), button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)]
+        return sequence
     }
 }
