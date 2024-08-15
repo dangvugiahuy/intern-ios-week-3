@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableviewButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func gotoUITableView(_ sender: Any) {
+        UIViewController.goToAnotherViewController(current: self, another: Week3UITableViewController())
+    }
 }
 
