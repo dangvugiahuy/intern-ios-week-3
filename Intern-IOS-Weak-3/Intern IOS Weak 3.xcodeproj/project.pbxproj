@@ -21,6 +21,14 @@
 		2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2932969B2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib */; };
 		293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */; };
 		293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */; };
+		298532142C6F30DE0049FE97 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532132C6F30DE0049FE97 /* Artist.swift */; };
+		298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532162C6F31AA0049FE97 /* CustomCollectionViewCell.swift */; };
+		298532192C6F31AA0049FE97 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298532172C6F31AA0049FE97 /* CustomCollectionViewCell.xib */; };
+		2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2985321B2C6F45170049FE97 /* ArtistDetailViewController.swift */; };
+		2985321E2C6F45170049FE97 /* ArtistDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2985321C2C6F45170049FE97 /* ArtistDetailViewController.xib */; };
+		298532202C6F499D0049FE97 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2985321F2C6F499D0049FE97 /* Songs.swift */; };
+		298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */; };
+		298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */; };
 		29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9702C6CA57500D948C6 /* AppDelegate.swift */; };
 		29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */; };
 		29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9742C6CA57500D948C6 /* ViewController.swift */; };
@@ -44,6 +52,14 @@
 		2932969B2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UIStackViewController.xib; sourceTree = "<group>"; };
 		2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UIScrollViewController.swift; sourceTree = "<group>"; };
 		293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UIScrollViewController.xib; sourceTree = "<group>"; };
+		298532132C6F30DE0049FE97 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		298532162C6F31AA0049FE97 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		298532172C6F31AA0049FE97 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		2985321B2C6F45170049FE97 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
+		2985321C2C6F45170049FE97 /* ArtistDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistDetailViewController.xib; sourceTree = "<group>"; };
+		2985321F2C6F499D0049FE97 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingMusicCollectionViewCell.xib; sourceTree = "<group>"; };
 		29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intern IOS Weak 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FDE9702C6CA57500D948C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				29037C8C2C6DE10C00ACC79C /* Art.swift */,
+				298532132C6F30DE0049FE97 /* Artist.swift */,
+				2985321F2C6F499D0049FE97 /* Songs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +133,9 @@
 			children = (
 				293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */,
 				293296962C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib */,
+				298532212C6F4F160049FE97 /* CustomMusicCollectionCell */,
+				298532152C6F31440049FE97 /* CustomCollectionCell */,
+				2985321A2C6F44CE0049FE97 /* ArtistDetail */,
 			);
 			path = UICollectionViewGroup;
 			sourceTree = "<group>";
@@ -135,6 +156,33 @@
 				293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */,
 			);
 			path = UIScrollViewGroup;
+			sourceTree = "<group>";
+		};
+		298532152C6F31440049FE97 /* CustomCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				298532162C6F31AA0049FE97 /* CustomCollectionViewCell.swift */,
+				298532172C6F31AA0049FE97 /* CustomCollectionViewCell.xib */,
+			);
+			path = CustomCollectionCell;
+			sourceTree = "<group>";
+		};
+		2985321A2C6F44CE0049FE97 /* ArtistDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2985321B2C6F45170049FE97 /* ArtistDetailViewController.swift */,
+				2985321C2C6F45170049FE97 /* ArtistDetailViewController.xib */,
+			);
+			path = ArtistDetail;
+			sourceTree = "<group>";
+		};
+		298532212C6F4F160049FE97 /* CustomMusicCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */,
+				298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */,
+			);
+			path = CustomMusicCollectionCell;
 			sourceTree = "<group>";
 		};
 		29FDE9642C6CA57500D948C6 = {
@@ -234,12 +282,15 @@
 				29FDE97A2C6CA57700D948C6 /* Assets.xcassets in Resources */,
 				2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */,
 				29FDE97D2C6CA57700D948C6 /* Base in Resources */,
+				298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */,
+				298532192C6F31AA0049FE97 /* CustomCollectionViewCell.xib in Resources */,
 				293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */,
 				293296982C6CB9FD00F6C8D2 /* Week3UICollectionViewController.xib in Resources */,
 				29FDE9782C6CA57500D948C6 /* Base in Resources */,
 				293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */,
 				29037C972C6E0A7A00ACC79C /* ArtDetailViewController.xib in Resources */,
 				29037C922C6DFBCF00ACC79C /* ArtTableViewCell.xib in Resources */,
+				2985321E2C6F45170049FE97 /* ArtistDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,12 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298532202C6F499D0049FE97 /* Songs.swift in Sources */,
 				293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */,
 				29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */,
+				298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */,
 				29037C8D2C6DE10C00ACC79C /* Art.swift in Sources */,
+				298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */,
+				2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
 				29037C962C6E0A7A00ACC79C /* ArtDetailViewController.swift in Sources */,
 				293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */,
+				298532142C6F30DE0049FE97 /* Artist.swift in Sources */,
 				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
 				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,
 				29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */,

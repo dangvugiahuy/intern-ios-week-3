@@ -8,9 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var tableviewButton: UIButton!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,5 +17,10 @@ class ViewController: UIViewController {
     @IBAction func gotoUITableView(_ sender: Any) {
         UIViewController.goToAnotherViewController(current: self, another: Week3UITableViewController())
     }
+    
+    @IBAction func gotoUICollectionView(_ sender: Any) {
+        UIViewController.goToAnotherViewController(current: self, another: Week3UICollectionViewController())
+    }
+    
 }
 

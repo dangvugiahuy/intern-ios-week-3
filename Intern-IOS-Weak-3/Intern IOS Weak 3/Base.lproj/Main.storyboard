@@ -129,6 +129,9 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="gotoUICollectionView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUu-m0-r1F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -225,9 +228,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="znn-yF-28y"/>
-                    <connections>
-                        <outlet property="tableviewButton" destination="5Ie-g3-w7N" id="NhC-su-dOL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
