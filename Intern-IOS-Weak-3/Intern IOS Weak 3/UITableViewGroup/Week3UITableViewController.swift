@@ -20,6 +20,10 @@ class Week3UITableViewController: UIViewController {
         artList.delegate = self
         artList.dataSource = self
     }
+    
+    @IBAction func goBackToPreviousView(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,5 +48,11 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ArtDetailViewController()
+        vc.art = artArray[indexPath.row]
+        UIViewController.goToAnotherViewController(current: self, another: vc)
     }
 }
