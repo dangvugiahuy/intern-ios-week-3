@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Week3UICollectionViewController: UIViewController {
+class Week3UICollectionViewController: BaseViewController {
     
     let artistList: [Artist] = Artist.getDemoArtistList()
     let musicList: [Songs] = Songs.getDemoSongsList()
@@ -22,7 +22,7 @@ class Week3UICollectionViewController: UIViewController {
     }
     
     @IBAction func goBackToPreviousView(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.backToPreviousScreen()
     }
     
     private func setupCollectionView(collection: UICollectionView, nibName: String, CellId: String) {
@@ -57,4 +57,14 @@ extension Week3UICollectionViewController: UICollectionViewDelegate, UICollectio
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == artistCollectionView {
+            let vc = ArtistDetailViewController()
+            vc.artist = artistList[indexPath.item]
+            vc.songs = Songs.getDemoSongsList().filter {
+                $0.artistName.contains(artistList[indexPath.item].artistName)
+            }
+            self.goto(another: vc)
+        }
+    }
 }

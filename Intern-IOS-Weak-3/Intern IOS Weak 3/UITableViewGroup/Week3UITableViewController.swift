@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Week3UITableViewController: UIViewController {
+class Week3UITableViewController: BaseViewController {
     
     let artArray: [Art] = Art.getDemoArtList()
 
@@ -22,15 +22,11 @@ class Week3UITableViewController: UIViewController {
     }
     
     @IBAction func goBackToPreviousView(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.backToPreviousScreen()
     }
 }
 
 extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return artArray.count

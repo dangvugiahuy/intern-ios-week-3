@@ -19,13 +19,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo UITableView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEj-Ih-MAb">
-                    <rect key="frame" x="94.666666666666686" y="83" width="204" height="29"/>
+                    <rect key="frame" x="94.666666666666686" y="95" width="204" height="29"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NEf-8V-uvJ">
-                    <rect key="frame" x="24" y="136" width="345" height="658"/>
+                    <rect key="frame" x="24" y="148" width="345" height="646"/>
                     <color key="backgroundColor" red="0.99876850839999998" green="0.99336677790000005" blue="0.97505146269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="separatorColor" red="0.95826154949999998" green="0.94900614019999996" blue="0.94895261529999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.99876850839999998" green="0.99336677790000005" blue="0.97505146269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,13 +35,13 @@
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdB-F7-5eg">
-                    <rect key="frame" x="24" y="83" width="28" height="28"/>
+                    <rect key="frame" x="24" y="95" width="28" height="28"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="28" id="1TM-PY-L9p"/>
                         <constraint firstAttribute="height" constant="28" id="75G-N5-dS7"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="arrow.up.left" catalog="system">
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                     </buttonConfiguration>
                     <connections>
@@ -54,8 +54,8 @@
             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NEf-8V-uvJ" secondAttribute="trailing" constant="24" id="1rz-eN-H8f"/>
-                <constraint firstItem="pEj-Ih-MAb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="6Fg-cB-34L"/>
-                <constraint firstItem="jdB-F7-5eg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="7Lw-Mg-MoL"/>
+                <constraint firstItem="pEj-Ih-MAb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="6Fg-cB-34L"/>
+                <constraint firstItem="jdB-F7-5eg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="7Lw-Mg-MoL"/>
                 <constraint firstItem="jdB-F7-5eg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="GgH-cU-Sop"/>
                 <constraint firstItem="pEj-Ih-MAb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KPv-eC-w0n"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NEf-8V-uvJ" secondAttribute="bottom" constant="24" id="Vuw-FX-F1B"/>
@@ -66,6 +66,6 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.up.left" catalog="system" width="128" height="112"/>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
     </resources>
 </document>

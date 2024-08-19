@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +15,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func gotoUITableView(_ sender: Any) {
-        UIViewController.goToAnotherViewController(current: self, another: Week3UITableViewController())
+        self.goto(another: Week3UITableViewController())
     }
     
     @IBAction func gotoUICollectionView(_ sender: Any) {
-        UIViewController.goToAnotherViewController(current: self, another: Week3UICollectionViewController())
+        self.goto(another: Week3UICollectionViewController())
     }
     
 }
