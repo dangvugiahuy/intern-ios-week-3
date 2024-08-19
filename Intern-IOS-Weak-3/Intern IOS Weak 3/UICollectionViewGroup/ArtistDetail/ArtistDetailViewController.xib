@@ -213,7 +213,7 @@
                 <constraint firstItem="vvd-21-hDH" firstAttribute="top" secondItem="3i0-Jm-xNh" secondAttribute="bottom" constant="20" id="pRM-9W-3AY"/>
                 <constraint firstItem="1rC-Ag-JN2" firstAttribute="top" secondItem="vvd-21-hDH" secondAttribute="bottom" constant="24" id="wm4-he-7t0"/>
             </constraints>
-            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="130.40000000000001" y="-11.822660098522167"/>
         </view>
     </objects>
     <resources>

@@ -49,6 +49,6 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ArtDetailViewController()
         vc.art = artArray[indexPath.row]
-        UIViewController.goToAnotherViewController(current: self, another: vc)
+        self.goto(another: vc)
     }
 }

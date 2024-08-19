@@ -22,5 +22,8 @@ class ViewController: BaseViewController {
         self.goto(another: Week3UICollectionViewController())
     }
     
+    @IBAction func gotoUIStackView(_ sender: Any) {
+        self.goto(another: Week3UIStackViewController())
+    }
 }
 

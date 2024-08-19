@@ -7,10 +7,16 @@
 
 import UIKit
 
-class Week3UIStackViewController: UIViewController {
+class Week3UIStackViewController: BaseViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    @IBAction func goToPreviousScreen(_ sender: Any) {
+        self.backToPreviousScreen()
     }
 }

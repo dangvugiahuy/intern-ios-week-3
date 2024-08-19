@@ -8,10 +8,3 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
-    
-    static func goToAnotherViewController(current crvc: UIViewController, another anvc: UIViewController) {
-        crvc.navigationController?.pushViewController(anvc, animated: true)
-    }
-    
-}
