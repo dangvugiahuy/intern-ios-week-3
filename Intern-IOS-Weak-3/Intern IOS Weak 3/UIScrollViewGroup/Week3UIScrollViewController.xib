@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,9 +17,51 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eam-Gn-Fwn">
+                    <rect key="frame" x="24" y="95" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="INL-OJ-tGt"/>
+                        <constraint firstAttribute="height" constant="24" id="ds9-72-c4m"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLL-ob-ofq">
+                    <rect key="frame" x="0.0" y="143" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oSx-Qg-uMj">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oSx-Qg-uMj" firstAttribute="top" secondItem="wLL-ob-ofq" secondAttribute="top" id="8hc-jO-46n"/>
+                        <constraint firstAttribute="bottom" secondItem="oSx-Qg-uMj" secondAttribute="bottom" id="Tc7-z2-Rol"/>
+                        <constraint firstItem="oSx-Qg-uMj" firstAttribute="leading" secondItem="wLL-ob-ofq" secondAttribute="leading" id="cKB-Z2-W51"/>
+                        <constraint firstAttribute="trailing" secondItem="oSx-Qg-uMj" secondAttribute="trailing" id="yq6-XO-JVs"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.99876850839999998" green="0.99336677790000005" blue="0.97505146269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Eam-Gn-Fwn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="15P-f1-FLW"/>
+                <constraint firstAttribute="trailing" secondItem="wLL-ob-ofq" secondAttribute="trailing" id="6zw-O8-lGQ"/>
+                <constraint firstItem="wLL-ob-ofq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pvd-UJ-INR"/>
+                <constraint firstAttribute="bottom" secondItem="wLL-ob-ofq" secondAttribute="bottom" id="Wc4-oj-deh"/>
+                <constraint firstItem="oSx-Qg-uMj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="750" id="YeL-z9-2do"/>
+                <constraint firstItem="oSx-Qg-uMj" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="aBU-jW-b0A"/>
+                <constraint firstItem="Eam-Gn-Fwn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="cKD-Q2-VBq"/>
+                <constraint firstItem="wLL-ob-ofq" firstAttribute="top" secondItem="Eam-Gn-Fwn" secondAttribute="bottom" constant="24" id="nIB-Z9-BIa"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
