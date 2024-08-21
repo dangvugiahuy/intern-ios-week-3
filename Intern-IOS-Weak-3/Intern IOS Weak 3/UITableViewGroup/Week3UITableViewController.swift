@@ -35,24 +35,39 @@ class Week3UITableViewController: BaseViewController {
         list = Songs.getDemoSongsList()
     }
     
-    private func updateTableViewAfterSearch(list: inout [Songs], content: String) {
+    private func updateSongsListAfterFilter(list: inout [Songs], content: String) {
         let filter: [Songs] = list.filter {
-            $0.songName.lowercased().contains(content.lowercased())
+            $0.songName.lowercased().contains(content.lowercased()) || $0.artistName.lowercased().contains(content.lowercased())
         }
         list = filter.isEmpty ? Songs.getDemoSongsList() : filter
+    }
+    
+    private func refreshSongList(list: inout [Songs]) {
+        list = Songs.getDemoSongsList()
+    }
+    
+    func updateSongsTableViewAfterSearch() {
+        updateSongsListAfterFilter(list: &songList, content: searchTextField.text!)
+        songListTableView.reloadData()
+    }
+    
+    func refreshSongsTableView() {
+        refreshSongList(list: &songList)
+        songListTableView.reloadData()
     }
     
     @IBAction func goBackToPreviousView(_ sender: Any) {
         self.backToPreviousScreen()
     }
     
-    @IBAction func endEditSearch(_ sender: Any) {
-        searchTextField.resignFirstResponder()
-    }
-    
     @IBAction func tapOutOfTextField(_ sender: Any) {
         if searchTextField.isEditing {
             searchTextField.endEditing(true)
+        }
+    }
+    @IBAction func handleDeletingTextfieldTextWithoutClearButton(_ sender: Any) {
+        if searchTextField.hasText == false {
+            refreshSongsTableView()
         }
     }
 }
@@ -79,16 +94,19 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        updateTableViewAfterSearch(list: &songList, content: searchTextField.text!)
-        songListTableView.reloadData()
+        updateSongsTableViewAfterSearch()
         searchTextField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if searchTextField.hasText == false {
-            songList = Songs.getDemoSongsList()
-            songListTableView.reloadData()
+            refreshSongsTableView()
         }
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        refreshSongsTableView()
+        return true
     }
 }

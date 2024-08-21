@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C892C6DD66C00ACC79C /* Extension.swift */; };
-		29037C8D2C6DE10C00ACC79C /* Art.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C8C2C6DE10C00ACC79C /* Art.swift */; };
-		29037C912C6DFBCF00ACC79C /* ArtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C8F2C6DFBCF00ACC79C /* ArtTableViewCell.swift */; };
-		29037C922C6DFBCF00ACC79C /* ArtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29037C902C6DFBCF00ACC79C /* ArtTableViewCell.xib */; };
-		29037C962C6E0A7A00ACC79C /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C942C6E0A7A00ACC79C /* ArtDetailViewController.swift */; };
-		29037C972C6E0A7A00ACC79C /* ArtDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29037C952C6E0A7A00ACC79C /* ArtDetailViewController.xib */; };
 		293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */; };
 		293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */; };
 		293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */; };
@@ -43,11 +38,6 @@
 
 /* Begin PBXFileReference section */
 		29037C892C6DD66C00ACC79C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		29037C8C2C6DE10C00ACC79C /* Art.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art.swift; sourceTree = "<group>"; };
-		29037C8F2C6DFBCF00ACC79C /* ArtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtTableViewCell.swift; sourceTree = "<group>"; };
-		29037C902C6DFBCF00ACC79C /* ArtTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtTableViewCell.xib; sourceTree = "<group>"; };
-		29037C942C6E0A7A00ACC79C /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
-		29037C952C6E0A7A00ACC79C /* ArtDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtDetailViewController.xib; sourceTree = "<group>"; };
 		293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UITableViewController.swift; sourceTree = "<group>"; };
 		293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UITableViewController.xib; sourceTree = "<group>"; };
 		293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UICollectionViewController.swift; sourceTree = "<group>"; };
@@ -100,29 +90,10 @@
 		29037C8B2C6DE0F000ACC79C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				29037C8C2C6DE10C00ACC79C /* Art.swift */,
 				298532132C6F30DE0049FE97 /* Artist.swift */,
 				2985321F2C6F499D0049FE97 /* Songs.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		29037C8E2C6DFB8C00ACC79C /* CustomCell */ = {
-			isa = PBXGroup;
-			children = (
-				29037C8F2C6DFBCF00ACC79C /* ArtTableViewCell.swift */,
-				29037C902C6DFBCF00ACC79C /* ArtTableViewCell.xib */,
-			);
-			path = CustomCell;
-			sourceTree = "<group>";
-		};
-		29037C932C6E0A0500ACC79C /* ArtDetail */ = {
-			isa = PBXGroup;
-			children = (
-				29037C942C6E0A7A00ACC79C /* ArtDetailViewController.swift */,
-				29037C952C6E0A7A00ACC79C /* ArtDetailViewController.xib */,
-			);
-			path = ArtDetail;
 			sourceTree = "<group>";
 		};
 		2932968B2C6CB81D00F6C8D2 /* UITableViewGroup */ = {
@@ -131,8 +102,6 @@
 				293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */,
 				293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */,
 				294416E22C7302AC00E45736 /* CustomSongCell */,
-				29037C932C6E0A0500ACC79C /* ArtDetail */,
-				29037C8E2C6DFB8C00ACC79C /* CustomCell */,
 			);
 			path = UITableViewGroup;
 			sourceTree = "<group>";
@@ -318,8 +287,6 @@
 				293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */,
 				294416E62C73040800E45736 /* BaseViewController.xib in Resources */,
 				294416EA2C7306C000E45736 /* SongTableViewCell.xib in Resources */,
-				29037C972C6E0A7A00ACC79C /* ArtDetailViewController.xib in Resources */,
-				29037C922C6DFBCF00ACC79C /* ArtTableViewCell.xib in Resources */,
 				2985321E2C6F45170049FE97 /* ArtistDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,20 +302,17 @@
 				293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */,
 				29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */,
 				298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */,
-				29037C8D2C6DE10C00ACC79C /* Art.swift in Sources */,
 				298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */,
 				294416E92C7306C000E45736 /* SongTableViewCell.swift in Sources */,
 				2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */,
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
-				29037C962C6E0A7A00ACC79C /* ArtDetailViewController.swift in Sources */,
 				293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */,
 				298532142C6F30DE0049FE97 /* Artist.swift in Sources */,
 				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
 				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,
 				29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */,
 				29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */,
-				29037C912C6DFBCF00ACC79C /* ArtTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
