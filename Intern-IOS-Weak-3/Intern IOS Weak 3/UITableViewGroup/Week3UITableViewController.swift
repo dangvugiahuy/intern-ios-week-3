@@ -9,8 +9,7 @@ import UIKit
 
 class Week3UITableViewController: BaseViewController {
     
-    var songList: [Songs] = Songs.getDemoSongsList()
-    
+    var songList: [Songs] = [Songs]()
     
     @IBOutlet weak var songListTableView: UITableView!
     @IBOutlet weak var searchBarView: UIView!
@@ -18,6 +17,7 @@ class Week3UITableViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupData(list: &songList)
         setupUI()
         let customCellNib = UINib(nibName: "SongTableViewCell", bundle: .main)
         songListTableView.register(customCellNib, forCellReuseIdentifier: "cell")
@@ -31,26 +31,37 @@ class Week3UITableViewController: BaseViewController {
         searchBarView.layer.cornerRadius = 16
     }
     
-    //Can't handle (temponary)
-    private func updateTableViewAfterSearch(list: inout [Songs], content: String) {
-        let temp = list.filter {
-            $0.songName.lowercased().contains(content)
-        }
-        list = temp
-//        songListTableView.reloadData()
+    private func setupData(list: inout [Songs]) {
+        list = Songs.getDemoSongsList()
     }
     
-    private func refreshSongList(list: inout [Songs]) {
-        list = Songs.getDemoSongsList()
-        songListTableView.reloadData()
+    private func updateTableViewAfterSearch(list: inout [Songs], content: String) {
+        let filter: [Songs] = list.filter {
+            $0.songName.lowercased().contains(content.lowercased())
+        }
+        list = filter.isEmpty ? Songs.getDemoSongsList() : filter
     }
     
     @IBAction func goBackToPreviousView(_ sender: Any) {
         self.backToPreviousScreen()
     }
+    
+    @IBAction func endEditSearch(_ sender: Any) {
+        searchTextField.resignFirstResponder()
+    }
+    
+    @IBAction func tapOutOfTextField(_ sender: Any) {
+        if searchTextField.isEditing {
+            searchTextField.endEditing(true)
+        }
+    }
 }
 
 extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songList.count
@@ -69,7 +80,15 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         updateTableViewAfterSearch(list: &songList, content: searchTextField.text!)
+        songListTableView.reloadData()
         searchTextField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if searchTextField.hasText == false {
+            songList = Songs.getDemoSongsList()
+            songListTableView.reloadData()
+        }
     }
 }
