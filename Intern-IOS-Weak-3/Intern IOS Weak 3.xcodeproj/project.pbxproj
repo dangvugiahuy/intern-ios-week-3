@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C892C6DD66C00ACC79C /* Extension.swift */; };
+		291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B032C75D26400E27D3A /* UserDetailViewController.xib */; };
+		291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291C5B022C75D26400E27D3A /* UserDetailViewController.swift */; };
 		293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */; };
 		293296932C6CB96100F6C8D2 /* Week3UITableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */; };
 		293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		29037C892C6DD66C00ACC79C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		291C5B022C75D26400E27D3A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		291C5B032C75D26400E27D3A /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UITableViewController.swift; sourceTree = "<group>"; };
 		293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Week3UITableViewController.xib; sourceTree = "<group>"; };
 		293296952C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UICollectionViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		291C5B012C75D22E00E27D3A /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				291C5B022C75D26400E27D3A /* UserDetailViewController.swift */,
+				291C5B032C75D26400E27D3A /* UserDetailViewController.xib */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		2932968B2C6CB81D00F6C8D2 /* UITableViewGroup */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 			children = (
 				2932969F2C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift */,
 				293296A02C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib */,
+				291C5B012C75D22E00E27D3A /* UserDetail */,
 			);
 			path = UIScrollViewGroup;
 			sourceTree = "<group>";
@@ -279,6 +293,7 @@
 				29FDE97A2C6CA57700D948C6 /* Assets.xcassets in Resources */,
 				2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */,
 				29FDE97D2C6CA57700D948C6 /* Base in Resources */,
+				291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */,
 				298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */,
 				298532192C6F31AA0049FE97 /* CustomCollectionViewCell.xib in Resources */,
 				293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */,
@@ -308,6 +323,7 @@
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
 				293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */,
+				291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */,
 				298532142C6F30DE0049FE97 /* Artist.swift in Sources */,
 				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
 				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,

@@ -57,6 +57,7 @@
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             <connections>
                                 <action selector="handleDeletingTextfieldTextWithoutClearButton:" destination="-1" eventType="editingChanged" id="jth-0v-um3"/>
+                                <outlet property="delegate" destination="-1" id="Pjn-wC-QeQ"/>
                             </connections>
                         </textField>
                     </subviews>

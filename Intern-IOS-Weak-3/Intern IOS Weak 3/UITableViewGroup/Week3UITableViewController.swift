@@ -65,6 +65,7 @@ class Week3UITableViewController: BaseViewController {
             searchTextField.endEditing(true)
         }
     }
+    
     @IBAction func handleDeletingTextfieldTextWithoutClearButton(_ sender: Any) {
         if searchTextField.hasText == false {
             refreshSongsTableView()
