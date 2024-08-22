@@ -24,6 +24,14 @@ class Songs {
                                   Songs(songName: "Die For You", songImage: "song2", artistName: "The Weeknd & Ariana Grande"),
                                   Songs(songName: "Creepin'", songImage: "song3", artistName: "The Weeknd & 21 Savage"),
                                   Songs(songName: "Yours Truly", songImage: "song4", artistName: "Ariana Grande"),
+                                  Songs(songName: "Sweetener", songImage: "song5", artistName: "Ariana Grande"), Songs(songName: "Star Boy", songImage: "song1", artistName: "The Weeknd"),
+                                  Songs(songName: "Die For You", songImage: "song2", artistName: "The Weeknd & Ariana Grande"),
+                                  Songs(songName: "Creepin'", songImage: "song3", artistName: "The Weeknd & 21 Savage"),
+                                  Songs(songName: "Yours Truly", songImage: "song4", artistName: "Ariana Grande"),
+                                  Songs(songName: "Sweetener", songImage: "song5", artistName: "Ariana Grande"), Songs(songName: "Star Boy", songImage: "song1", artistName: "The Weeknd"),
+                                  Songs(songName: "Die For You", songImage: "song2", artistName: "The Weeknd & Ariana Grande"),
+                                  Songs(songName: "Creepin'", songImage: "song3", artistName: "The Weeknd & 21 Savage"),
+                                  Songs(songName: "Yours Truly", songImage: "song4", artistName: "Ariana Grande"),
                                   Songs(songName: "Sweetener", songImage: "song5", artistName: "Ariana Grande")])
         return songs
     }

@@ -11,7 +11,7 @@ class SongTableViewCell: UITableViewCell {
     
     var song: Songs? {
         didSet {
-            setupUI()
+            setupDataForCell()
         }
     }
     
@@ -21,7 +21,7 @@ class SongTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupUI()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,13 +29,20 @@ class SongTableViewCell: UITableViewCell {
         
     }
     
-    private func setupUI() {
+    override func prepareForReuse() {
+        
+    }
+    
+    private func setupDataForCell() {
         if let song  = song {
             songImageView.image = UIImage(named: song.songImage)
-            songImageView.layer.masksToBounds = true
-            songImageView.layer.cornerRadius = 20
             songNameLabel.text = song.songName
             songArtistNameLabel.text = song.artistName
         }
+    }
+    
+    private func setupUI() {
+        songImageView.layer.masksToBounds = true
+        songImageView.layer.cornerRadius = 20
     }
 }
