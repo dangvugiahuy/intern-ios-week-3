@@ -31,7 +31,7 @@ class SongTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        setupDataForCell()
+        refreshCellState()
     }
     
     private func setupDataForCell() {
@@ -39,11 +39,8 @@ class SongTableViewCell: UITableViewCell {
             songImageView.image = UIImage(named: song.songImage)
             songNameLabel.text = song.songName
             songArtistNameLabel.text = song.artistName
-            switch song.isliked {
-            case true:
+            if song.isliked {
                 addSongFavoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-            default:
-                addSongFavoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
             }
         }
     }
@@ -51,6 +48,13 @@ class SongTableViewCell: UITableViewCell {
     private func setupUI() {
         songImageView.layer.masksToBounds = true
         songImageView.layer.cornerRadius = 20
+    }
+    
+    private func refreshCellState() {
+        songImageView.image = UIImage()
+        songNameLabel.text = ""
+        songArtistNameLabel.text = ""
+        addSongFavoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
     }
     
     
