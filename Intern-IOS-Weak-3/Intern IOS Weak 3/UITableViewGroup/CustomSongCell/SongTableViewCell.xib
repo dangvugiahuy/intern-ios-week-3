@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiD-Ik-I4j">
-                        <rect key="frame" x="432" y="32" width="72" height="32"/>
+                        <rect key="frame" x="404" y="32" width="100" height="32"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nec-DT-4dt">
                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -38,33 +38,51 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmh-fV-PuU">
-                                <rect key="frame" x="44" y="0.0" width="28" height="32"/>
+                                <rect key="frame" x="34" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gmh-fV-PuU" secondAttribute="height" multiplier="1:1" id="B9H-1u-iYF"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ellipis.vertical"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fab-Uh-k4l">
+                                <rect key="frame" x="68" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fab-Uh-k4l" secondAttribute="height" multiplier="1:1" id="oax-b1-toW"/>
+                                </constraints>
+                                <color key="tintColor" name="Primary500"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="addSongToFavorite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WTd-Xe-OGu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fab-Uh-k4l" secondAttribute="trailing" id="Bx2-63-4uw"/>
                             <constraint firstItem="Nec-DT-4dt" firstAttribute="top" secondItem="JiD-Ik-I4j" secondAttribute="top" id="Kef-ge-SIu"/>
-                            <constraint firstAttribute="trailing" secondItem="Gmh-fV-PuU" secondAttribute="trailing" id="LPh-VY-eQx"/>
+                            <constraint firstAttribute="bottom" secondItem="fab-Uh-k4l" secondAttribute="bottom" id="Lzj-00-wgg"/>
                             <constraint firstAttribute="height" constant="32" id="NXC-o9-gzT"/>
-                            <constraint firstAttribute="width" constant="72" id="Nwk-z4-NRD"/>
+                            <constraint firstAttribute="width" constant="100" id="Nwk-z4-NRD"/>
+                            <constraint firstItem="Gmh-fV-PuU" firstAttribute="top" secondItem="JiD-Ik-I4j" secondAttribute="top" id="QAB-yN-Y83"/>
                             <constraint firstItem="Nec-DT-4dt" firstAttribute="leading" secondItem="JiD-Ik-I4j" secondAttribute="leading" id="Qjs-Gw-9VF"/>
-                            <constraint firstAttribute="bottom" secondItem="Gmh-fV-PuU" secondAttribute="bottom" id="Zss-gW-vFt"/>
-                            <constraint firstItem="Gmh-fV-PuU" firstAttribute="top" secondItem="JiD-Ik-I4j" secondAttribute="top" id="s3j-IJ-e1F"/>
+                            <constraint firstItem="Gmh-fV-PuU" firstAttribute="centerX" secondItem="JiD-Ik-I4j" secondAttribute="centerX" id="eQg-BK-XqY"/>
+                            <constraint firstAttribute="bottom" secondItem="Gmh-fV-PuU" secondAttribute="bottom" id="srK-7k-VUM"/>
+                            <constraint firstItem="fab-Uh-k4l" firstAttribute="top" secondItem="JiD-Ik-I4j" secondAttribute="top" id="toz-h4-dt2"/>
                             <constraint firstAttribute="bottom" secondItem="Nec-DT-4dt" secondAttribute="bottom" id="vKt-EK-zBv"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B06-ax-4Nm">
-                        <rect key="frame" x="96" y="10" width="320" height="76"/>
+                        <rect key="frame" x="96" y="10" width="292" height="76"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-tX-JqJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                                <rect key="frame" x="0.0" y="0.0" width="292" height="38"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-3I-e3a">
-                                <rect key="frame" x="0.0" y="38" width="320" height="38"/>
+                                <rect key="frame" x="0.0" y="38" width="292" height="38"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                 <color key="textColor" name="Greyscale700"/>
                                 <nil key="highlightedColor"/>
@@ -97,6 +115,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addSongFavoriteButton" destination="fab-Uh-k4l" id="gAt-HQ-wNN"/>
                 <outlet property="songArtistNameLabel" destination="TmY-3I-e3a" id="hjp-aK-kfc"/>
                 <outlet property="songImageView" destination="XZ5-7b-beb" id="wxW-Ca-FCG"/>
                 <outlet property="songNameLabel" destination="aWR-tX-JqJ" id="6Ac-Pw-GN3"/>
@@ -106,6 +125,7 @@
     </objects>
     <resources>
         <image name="ellipis.vertical" width="4" height="16"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="play.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="Greyscale700">
             <color red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

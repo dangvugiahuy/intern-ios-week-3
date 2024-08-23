@@ -11,7 +11,6 @@ class ViewController: BaseViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func gotoUITableView(_ sender: Any) {
