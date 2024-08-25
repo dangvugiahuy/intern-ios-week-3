@@ -21,10 +21,6 @@ class Week3UICollectionViewController: BaseViewController {
         setupCollectionView(collection: trendingMusicList, nibName: "TrendingMusicCollectionViewCell", CellId: "musicCell")
     }
     
-    @IBAction func goBackToPreviousView(_ sender: Any) {
-        self.backToPreviousScreen()
-    }
-    
     private func setupCollectionView(collection: UICollectionView, nibName: String, CellId: String) {
         let nib = UINib(nibName: "\(nibName)", bundle: .main)
         collection.register(nib, forCellWithReuseIdentifier: "\(CellId)")

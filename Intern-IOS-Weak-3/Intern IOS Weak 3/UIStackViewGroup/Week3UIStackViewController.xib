@@ -24,45 +24,8 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7tq-Hd-dew">
                     <rect key="frame" x="24" y="83" width="345" height="735"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hx-nJ-YIX">
-                            <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v4-yz-7QC">
-                                    <rect key="frame" x="0.0" y="11" width="28" height="28"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="28" id="QXg-49-4gc"/>
-                                        <constraint firstAttribute="height" constant="28" id="ZGv-Ap-QRR"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
-                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </buttonConfiguration>
-                                    <connections>
-                                        <action selector="goToPreviousScreen:" destination="-1" eventType="touchUpInside" id="rH3-cB-AxR"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-v7-nwe">
-                                    <rect key="frame" x="317" y="11" width="28" height="28"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="28" id="MY2-1a-0kW"/>
-                                        <constraint firstAttribute="height" constant="28" id="ZEF-Nh-gPC"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="ellipsis.circle" catalog="system">
-                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </buttonConfiguration>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="QaQ-jm-yfb"/>
-                                <constraint firstItem="5v4-yz-7QC" firstAttribute="leading" secondItem="8Hx-nJ-YIX" secondAttribute="leading" id="n5T-0Q-1lq"/>
-                                <constraint firstItem="5v4-yz-7QC" firstAttribute="centerY" secondItem="8Hx-nJ-YIX" secondAttribute="centerY" id="p0D-w7-BwN"/>
-                                <constraint firstAttribute="trailing" secondItem="Xlu-v7-nwe" secondAttribute="trailing" id="qTf-lQ-U47"/>
-                                <constraint firstItem="Xlu-v7-nwe" firstAttribute="centerY" secondItem="8Hx-nJ-YIX" secondAttribute="centerY" id="xIK-lp-GJn"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-7M-cFc">
-                            <rect key="frame" x="0.0" y="74" width="345" height="661"/>
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="735"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Yx-Je-JRW">
                                     <rect key="frame" x="0.0" y="0.0" width="345" height="200"/>
@@ -221,10 +184,6 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="8Hx-nJ-YIX" secondAttribute="trailing" id="6XJ-IH-IsT"/>
-                        <constraint firstItem="8Hx-nJ-YIX" firstAttribute="leading" secondItem="7tq-Hd-dew" secondAttribute="leading" id="EZW-Ev-9oS"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -239,11 +198,9 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="arrow.down.square" catalog="system" width="128" height="114"/>
         <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="91"/>
         <image name="ellipis.vertical" width="4" height="16"/>
-        <image name="ellipsis.circle" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="podcastartits1" width="1670" height="1670"/>

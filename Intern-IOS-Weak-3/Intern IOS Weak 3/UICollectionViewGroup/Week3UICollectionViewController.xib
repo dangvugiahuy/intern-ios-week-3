@@ -20,22 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njE-nM-FzH">
-                    <rect key="frame" x="24" y="95" width="28" height="28"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="28" id="K4l-xc-CEn"/>
-                        <constraint firstAttribute="width" constant="28" id="ufH-f4-OVb"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
-                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="goBackToPreviousView:" destination="-1" eventType="touchUpInside" id="1yb-nU-sZk"/>
-                    </connections>
-                </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6Y8-s7-xn5">
-                    <rect key="frame" x="24" y="487" width="382" height="411"/>
+                    <rect key="frame" x="24" y="423" width="382" height="509"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="24" minimumInteritemSpacing="12" id="F8t-VJ-fCi">
                         <size key="itemSize" width="184" height="221"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -48,13 +34,13 @@
                     </connections>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRq-Fu-Rl4">
-                    <rect key="frame" x="24" y="147" width="151" height="29"/>
+                    <rect key="frame" x="24" y="83" width="151" height="29"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="a4N-lW-dsd">
-                    <rect key="frame" x="24" y="192" width="382" height="218"/>
+                    <rect key="frame" x="24" y="128" width="382" height="218"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="218" id="c0y-Ls-eKK"/>
@@ -71,7 +57,7 @@
                     </connections>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-Sm-7Vb">
-                    <rect key="frame" x="24" y="442" width="161" height="29"/>
+                    <rect key="frame" x="24" y="378" width="161" height="29"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -80,17 +66,15 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="eRq-Fu-Rl4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="2S1-CQ-Hcr"/>
                 <constraint firstItem="6Y8-s7-xn5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="DJH-BH-PTD"/>
-                <constraint firstItem="njE-nM-FzH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="FPm-gN-TZR"/>
                 <constraint firstItem="a4N-lW-dsd" firstAttribute="top" secondItem="eRq-Fu-Rl4" secondAttribute="bottom" constant="16" id="Fwe-kX-BSA"/>
-                <constraint firstItem="njE-nM-FzH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="ISk-3U-YHa"/>
                 <constraint firstItem="CnY-Sm-7Vb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Je1-zi-lIH"/>
                 <constraint firstItem="a4N-lW-dsd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Vpx-D4-yI3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4N-lW-dsd" secondAttribute="trailing" constant="24" id="YBZ-ia-JFB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Y8-s7-xn5" secondAttribute="trailing" constant="24" id="ZG4-Vw-xhs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6Y8-s7-xn5" secondAttribute="bottom" id="cbK-PK-98o"/>
+                <constraint firstAttribute="bottom" secondItem="6Y8-s7-xn5" secondAttribute="bottom" id="cbK-PK-98o"/>
                 <constraint firstItem="eRq-Fu-Rl4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="jhh-Wp-gf1"/>
-                <constraint firstItem="eRq-Fu-Rl4" firstAttribute="top" secondItem="njE-nM-FzH" secondAttribute="bottom" constant="24" id="lnN-Sb-nol"/>
                 <constraint firstItem="6Y8-s7-xn5" firstAttribute="top" secondItem="CnY-Sm-7Vb" secondAttribute="bottom" constant="16" id="sgi-Lp-WdF"/>
                 <constraint firstItem="CnY-Sm-7Vb" firstAttribute="top" secondItem="a4N-lW-dsd" secondAttribute="bottom" constant="32" id="w5x-9p-9KQ"/>
             </constraints>
@@ -98,7 +82,6 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -11,6 +11,7 @@ class ViewController: BaseViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBarItem()
     }
     
     @IBAction func gotoUITableView(_ sender: Any) {

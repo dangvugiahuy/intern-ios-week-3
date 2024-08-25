@@ -8,10 +8,10 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     func backToPreviousScreen() {
@@ -20,5 +20,11 @@ class BaseViewController: UIViewController {
     
     func goto(another screen: UIViewController) {
         self.navigationController?.pushViewController(screen, animated: true)
+    }
+    
+    func setupNavigationBarItem() {
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(systemName: "arrow.backward")
+        self.navigationItem.backButtonTitle = ""
     }
 }

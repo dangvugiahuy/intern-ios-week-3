@@ -14,11 +14,13 @@ class Week3UIStackViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.layer.masksToBounds = true
-        image.layer.cornerRadius = 20
+        setupUI()
     }
     
-    @IBAction func goToPreviousScreen(_ sender: Any) {
-        self.backToPreviousScreen()
+    private func setupUI() {
+        image.layer.masksToBounds = true
+        image.layer.cornerRadius = 20
+        let menuButton = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = menuButton
     }
 }

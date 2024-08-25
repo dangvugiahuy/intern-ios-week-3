@@ -56,10 +56,6 @@ class Week3UIScrollViewController: BaseViewController {
         }
     }
     
-    @IBAction func goToPreviousScreen(_ sender: Any) {
-        self.backToPreviousScreen()
-    }
-    
     @IBAction func register(_ sender: Any) {
         
     }

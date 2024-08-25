@@ -56,10 +56,6 @@ class Week3UITableViewController: BaseViewController {
         songListTableView.reloadData()
     }
     
-    @IBAction func goBackToPreviousView(_ sender: Any) {
-        self.backToPreviousScreen()
-    }
-    
     @IBAction func tapOutOfTextField(_ sender: Any) {
         if searchTextField.isEditing {
             searchTextField.endEditing(true)
