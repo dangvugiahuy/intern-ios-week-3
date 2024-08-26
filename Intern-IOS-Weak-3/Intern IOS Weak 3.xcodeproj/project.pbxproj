@@ -22,6 +22,8 @@
 		294416E62C73040800E45736 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294416E42C73040800E45736 /* BaseViewController.xib */; };
 		294416E92C7306C000E45736 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294416E72C7306C000E45736 /* SongTableViewCell.swift */; };
 		294416EA2C7306C000E45736 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294416E82C7306C000E45736 /* SongTableViewCell.xib */; };
+		2964F4872C7C7952001362FE /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F4862C7C7952001362FE /* RegisterUserViewController.swift */; };
+		2964F48A2C7C816A001362FE /* LoginFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F4882C7C816A001362FE /* LoginFlow.storyboard */; };
 		298532142C6F30DE0049FE97 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532132C6F30DE0049FE97 /* Artist.swift */; };
 		298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532162C6F31AA0049FE97 /* CustomCollectionViewCell.swift */; };
 		298532192C6F31AA0049FE97 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298532172C6F31AA0049FE97 /* CustomCollectionViewCell.xib */; };
@@ -30,6 +32,7 @@
 		298532202C6F499D0049FE97 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2985321F2C6F499D0049FE97 /* Songs.swift */; };
 		298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */; };
 		298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */; };
+		29A607362C7C2DC800E52BBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A607352C7C2DC800E52BBB /* LoginViewController.swift */; };
 		29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9702C6CA57500D948C6 /* AppDelegate.swift */; };
 		29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */; };
 		29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9742C6CA57500D948C6 /* ViewController.swift */; };
@@ -54,6 +57,8 @@
 		294416E42C73040800E45736 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		294416E72C7306C000E45736 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		294416E82C7306C000E45736 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
+		2964F4862C7C7952001362FE /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		2964F4892C7C816A001362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Intern IOS Weak 3/Base.lproj/LoginFlow.storyboard"; sourceTree = "<group>"; };
 		298532132C6F30DE0049FE97 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		298532162C6F31AA0049FE97 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		298532172C6F31AA0049FE97 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		2985321F2C6F499D0049FE97 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMusicCollectionViewCell.swift; sourceTree = "<group>"; };
 		298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingMusicCollectionViewCell.xib; sourceTree = "<group>"; };
+		29A607352C7C2DC800E52BBB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intern IOS Weak 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FDE9702C6CA57500D948C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +201,16 @@
 			path = CustomMusicCollectionCell;
 			sourceTree = "<group>";
 		};
+		29A607372C7C2E8000E52BBB /* DemoSegueStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				2964F4882C7C816A001362FE /* LoginFlow.storyboard */,
+				29A607352C7C2DC800E52BBB /* LoginViewController.swift */,
+				2964F4862C7C7952001362FE /* RegisterUserViewController.swift */,
+			);
+			path = DemoSegueStoryboard;
+			sourceTree = "<group>";
+		};
 		29FDE9642C6CA57500D948C6 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +241,7 @@
 				2932969E2C6CBAE900F6C8D2 /* UIScrollViewGroup */,
 				29037C8B2C6DE0F000ACC79C /* Models */,
 				29037C882C6DD65700ACC79C /* Ultilities */,
+				29A607372C7C2E8000E52BBB /* DemoSegueStoryboard */,
 				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
 				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
 				29FDE97E2C6CA57700D948C6 /* Info.plist */,
@@ -292,6 +309,7 @@
 			files = (
 				29FDE97A2C6CA57700D948C6 /* Assets.xcassets in Resources */,
 				2932969D2C6CBA6F00F6C8D2 /* Week3UIStackViewController.xib in Resources */,
+				2964F48A2C7C816A001362FE /* LoginFlow.storyboard in Resources */,
 				29FDE97D2C6CA57700D948C6 /* Base in Resources */,
 				291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */,
 				298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */,
@@ -323,9 +341,11 @@
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
 				293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */,
+				2964F4872C7C7952001362FE /* RegisterUserViewController.swift in Sources */,
 				291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */,
 				298532142C6F30DE0049FE97 /* Artist.swift in Sources */,
 				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
+				29A607362C7C2DC800E52BBB /* LoginViewController.swift in Sources */,
 				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,
 				29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */,
 				29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */,
@@ -335,6 +355,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2964F4882C7C816A001362FE /* LoginFlow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2964F4892C7C816A001362FE /* Base */,
+			);
+			name = LoginFlow.storyboard;
+			sourceTree = "<group>";
+		};
 		29FDE9762C6CA57500D948C6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
