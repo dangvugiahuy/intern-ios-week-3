@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C892C6DD66C00ACC79C /* Extension.swift */; };
+		29037C8A2C6DD66C00ACC79C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C892C6DD66C00ACC79C /* Extensions.swift */; };
 		291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B032C75D26400E27D3A /* UserDetailViewController.xib */; };
 		291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291C5B022C75D26400E27D3A /* UserDetailViewController.swift */; };
 		293296922C6CB96100F6C8D2 /* Week3UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */; };
@@ -33,6 +33,13 @@
 		298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */; };
 		298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */; };
 		29A607362C7C2DC800E52BBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A607352C7C2DC800E52BBB /* LoginViewController.swift */; };
+		29F818292C7D76560024415F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818282C7D76560024415F /* LandingViewController.swift */; };
+		29F8182D2C7D80480024415F /* SongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F8182C2C7D80480024415F /* SongDetailViewController.xib */; };
+		29F8182E2C7D80480024415F /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8182B2C7D80480024415F /* SongDetailViewController.swift */; };
+		29F818322C7D9C260024415F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818312C7D9C260024415F /* Protocols.swift */; };
+		29F818342C7DD0EE0024415F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818332C7DD0ED0024415F /* APIService.swift */; };
+		29F818362C7DD36F0024415F /* SongsRespone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818352C7DD36E0024415F /* SongsRespone.swift */; };
+		29F818382C7DD5260024415F /* SongsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818372C7DD5260024415F /* SongsObject.swift */; };
 		29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9702C6CA57500D948C6 /* AppDelegate.swift */; };
 		29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */; };
 		29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9742C6CA57500D948C6 /* ViewController.swift */; };
@@ -42,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29037C892C6DD66C00ACC79C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		29037C892C6DD66C00ACC79C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		291C5B022C75D26400E27D3A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		291C5B032C75D26400E27D3A /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week3UITableViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +75,14 @@
 		298532222C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMusicCollectionViewCell.swift; sourceTree = "<group>"; };
 		298532232C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingMusicCollectionViewCell.xib; sourceTree = "<group>"; };
 		29A607352C7C2DC800E52BBB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intern IOS Weak 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F818282C7D76560024415F /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		29F8182B2C7D80480024415F /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
+		29F8182C2C7D80480024415F /* SongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongDetailViewController.xib; sourceTree = "<group>"; };
+		29F818312C7D9C260024415F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		29F818332C7DD0ED0024415F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		29F818352C7DD36E0024415F /* SongsRespone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRespone.swift; sourceTree = "<group>"; };
+		29F818372C7DD5260024415F /* SongsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsObject.swift; sourceTree = "<group>"; };
+		29FDE96D2C6CA57500D948C6 /* Dang Vu Gia Huy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dang Vu Gia Huy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FDE9702C6CA57500D948C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29FDE9742C6CA57500D948C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +106,9 @@
 		29037C882C6DD65700ACC79C /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
-				29037C892C6DD66C00ACC79C /* Extension.swift */,
+				29037C892C6DD66C00ACC79C /* Extensions.swift */,
+				29F818312C7D9C260024415F /* Protocols.swift */,
+				29F818332C7DD0ED0024415F /* APIService.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -102,6 +118,8 @@
 			children = (
 				298532132C6F30DE0049FE97 /* Artist.swift */,
 				2985321F2C6F499D0049FE97 /* Songs.swift */,
+				29F818352C7DD36E0024415F /* SongsRespone.swift */,
+				29F818372C7DD5260024415F /* SongsObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +139,7 @@
 				293296902C6CB96100F6C8D2 /* Week3UITableViewController.swift */,
 				293296912C6CB96100F6C8D2 /* Week3UITableViewController.xib */,
 				294416E22C7302AC00E45736 /* CustomSongCell */,
+				29F8182A2C7D80160024415F /* SongDetail */,
 			);
 			path = UITableViewGroup;
 			sourceTree = "<group>";
@@ -207,8 +226,18 @@
 				2964F4882C7C816A001362FE /* LoginFlow.storyboard */,
 				29A607352C7C2DC800E52BBB /* LoginViewController.swift */,
 				2964F4862C7C7952001362FE /* RegisterUserViewController.swift */,
+				29F818282C7D76560024415F /* LandingViewController.swift */,
 			);
 			path = DemoSegueStoryboard;
+			sourceTree = "<group>";
+		};
+		29F8182A2C7D80160024415F /* SongDetail */ = {
+			isa = PBXGroup;
+			children = (
+				29F8182B2C7D80480024415F /* SongDetailViewController.swift */,
+				29F8182C2C7D80480024415F /* SongDetailViewController.xib */,
+			);
+			path = SongDetail;
 			sourceTree = "<group>";
 		};
 		29FDE9642C6CA57500D948C6 = {
@@ -222,7 +251,7 @@
 		29FDE96E2C6CA57500D948C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */,
+				29FDE96D2C6CA57500D948C6 /* Dang Vu Gia Huy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,9 +268,9 @@
 				293296942C6CB9C600F6C8D2 /* UICollectionViewGroup */,
 				293296992C6CBA2300F6C8D2 /* UIStackViewGroup */,
 				2932969E2C6CBAE900F6C8D2 /* UIScrollViewGroup */,
+				29A607372C7C2E8000E52BBB /* DemoSegueStoryboard */,
 				29037C8B2C6DE0F000ACC79C /* Models */,
 				29037C882C6DD65700ACC79C /* Ultilities */,
-				29A607372C7C2E8000E52BBB /* DemoSegueStoryboard */,
 				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
 				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
 				29FDE97E2C6CA57700D948C6 /* Info.plist */,
@@ -252,9 +281,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		29FDE96C2C6CA57500D948C6 /* Intern IOS Weak 3 */ = {
+		29FDE96C2C6CA57500D948C6 /* Dang Vu Gia Huy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29FDE9812C6CA57700D948C6 /* Build configuration list for PBXNativeTarget "Intern IOS Weak 3" */;
+			buildConfigurationList = 29FDE9812C6CA57700D948C6 /* Build configuration list for PBXNativeTarget "Dang Vu Gia Huy" */;
 			buildPhases = (
 				29FDE9692C6CA57500D948C6 /* Sources */,
 				29FDE96A2C6CA57500D948C6 /* Frameworks */,
@@ -264,9 +293,9 @@
 			);
 			dependencies = (
 			);
-			name = "Intern IOS Weak 3";
+			name = "Dang Vu Gia Huy";
 			productName = "Intern IOS Weak 3";
-			productReference = 29FDE96D2C6CA57500D948C6 /* Intern IOS Weak 3.app */;
+			productReference = 29FDE96D2C6CA57500D948C6 /* Dang Vu Gia Huy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 29FDE9682C6CA57500D948C6 /* Build configuration list for PBXProject "Intern IOS Weak 3" */;
+			buildConfigurationList = 29FDE9682C6CA57500D948C6 /* Build configuration list for PBXProject "Dang Vu Gia Huy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -297,7 +326,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29FDE96C2C6CA57500D948C6 /* Intern IOS Weak 3 */,
+				29FDE96C2C6CA57500D948C6 /* Dang Vu Gia Huy */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +341,7 @@
 				2964F48A2C7C816A001362FE /* LoginFlow.storyboard in Resources */,
 				29FDE97D2C6CA57700D948C6 /* Base in Resources */,
 				291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */,
+				29F8182D2C7D80480024415F /* SongDetailViewController.xib in Resources */,
 				298532252C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.xib in Resources */,
 				298532192C6F31AA0049FE97 /* CustomCollectionViewCell.xib in Resources */,
 				293296A22C6CBB2700F6C8D2 /* Week3UIScrollViewController.xib in Resources */,
@@ -334,9 +364,14 @@
 				298532202C6F499D0049FE97 /* Songs.swift in Sources */,
 				293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */,
 				29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */,
+				29F818322C7D9C260024415F /* Protocols.swift in Sources */,
+				29F818342C7DD0EE0024415F /* APIService.swift in Sources */,
+				29F818382C7DD5260024415F /* SongsObject.swift in Sources */,
 				298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */,
+				29F818362C7DD36F0024415F /* SongsRespone.swift in Sources */,
 				298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */,
 				294416E92C7306C000E45736 /* SongTableViewCell.swift in Sources */,
+				29F8182E2C7D80480024415F /* SongDetailViewController.swift in Sources */,
 				2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */,
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,
 				29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */,
@@ -348,7 +383,8 @@
 				29A607362C7C2DC800E52BBB /* LoginViewController.swift in Sources */,
 				293296A12C6CBB2700F6C8D2 /* Week3UIScrollViewController.swift in Sources */,
 				29FDE9732C6CA57500D948C6 /* SceneDelegate.swift in Sources */,
-				29037C8A2C6DD66C00ACC79C /* Extension.swift in Sources */,
+				29037C8A2C6DD66C00ACC79C /* Extensions.swift in Sources */,
+				29F818292C7D76560024415F /* LandingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +600,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29FDE9682C6CA57500D948C6 /* Build configuration list for PBXProject "Intern IOS Weak 3" */ = {
+		29FDE9682C6CA57500D948C6 /* Build configuration list for PBXProject "Dang Vu Gia Huy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29FDE97F2C6CA57700D948C6 /* Debug */,
@@ -573,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29FDE9812C6CA57700D948C6 /* Build configuration list for PBXNativeTarget "Intern IOS Weak 3" */ = {
+		29FDE9812C6CA57700D948C6 /* Build configuration list for PBXNativeTarget "Dang Vu Gia Huy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29FDE9822C6CA57700D948C6 /* Debug */,

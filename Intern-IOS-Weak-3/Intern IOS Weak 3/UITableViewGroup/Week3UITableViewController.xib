@@ -9,12 +9,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Week3UITableViewController" customModule="Intern_IOS_Weak_3" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Week3UITableViewController" customModule="Dang_Vu_Gia_Huy" customModuleProvider="target">
             <connections>
                 <outlet property="searchBarView" destination="b9w-hr-uRn" id="G1v-cw-uox"/>
                 <outlet property="searchTextField" destination="iFs-e6-6JH" id="PFv-au-pFO"/>
                 <outlet property="songListTableView" destination="NEf-8V-uvJ" id="Fne-Dq-XNt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTapGesture" destination="AfP-kS-pxf" id="vHv-T0-hHH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -73,13 +74,13 @@
                 <constraint firstItem="NEf-8V-uvJ" firstAttribute="top" secondItem="b9w-hr-uRn" secondAttribute="bottom" constant="24" id="ncO-Um-j4E"/>
             </constraints>
             <connections>
-                <outletCollection property="gestureRecognizers" destination="AfP-kS-pxf" appends="YES" id="2Zb-9v-VRx"/>
+                <outletCollection property="gestureRecognizers" destination="AfP-kS-pxf" appends="YES" id="jyY-gl-klV"/>
             </connections>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
         <tapGestureRecognizer id="AfP-kS-pxf">
             <connections>
-                <action selector="tapOutOfTextField:" destination="-1" id="Zv2-zI-2AC"/>
+                <action selector="tapOutOfTextField:" destination="-1" id="blL-pn-6RT"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

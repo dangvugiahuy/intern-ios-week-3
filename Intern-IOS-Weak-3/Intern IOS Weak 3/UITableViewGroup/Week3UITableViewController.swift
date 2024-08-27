@@ -11,6 +11,7 @@ class Week3UITableViewController: BaseViewController {
     
     var songList: [Songs] = [Songs]()
     
+    @IBOutlet var viewTapGesture: UITapGestureRecognizer!
     @IBOutlet weak var songListTableView: UITableView!
     @IBOutlet weak var searchBarView: UIView!
     @IBOutlet weak var searchTextField: UITextField!
@@ -29,6 +30,8 @@ class Week3UITableViewController: BaseViewController {
     private func setupUI() {
         searchBarView.layer.masksToBounds = true
         searchBarView.layer.cornerRadius = 16
+        viewTapGesture.cancelsTouchesInView = false
+        self.setupNavigationBarItem()
     }
     
     private func setupData(list: inout [Songs]) {
@@ -59,6 +62,7 @@ class Week3UITableViewController: BaseViewController {
     @IBAction func tapOutOfTextField(_ sender: Any) {
         if searchTextField.isEditing {
             searchTextField.endEditing(true)
+            viewTapGesture.cancelsTouchesInView = false
         }
     }
     
@@ -88,6 +92,17 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SongDetailViewController()
+        let song = songList[indexPath.row]
+        vc.song = song
+        self.goto(another: vc)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        viewTapGesture.cancelsTouchesInView = true
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

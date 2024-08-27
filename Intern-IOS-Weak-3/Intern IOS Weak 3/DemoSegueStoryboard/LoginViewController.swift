@@ -7,11 +7,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setupNavigationBarItem()
     }
     
+    @IBAction func gotoSigInView(_ sender: Any) {
+        
+    }
 }

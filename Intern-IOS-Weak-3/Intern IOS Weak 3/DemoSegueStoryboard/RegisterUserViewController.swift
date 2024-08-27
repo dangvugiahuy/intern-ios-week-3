@@ -14,7 +14,25 @@ class RegisterUserViewController: UIViewController {
 
     }
     
-    @IBAction func closeRegisterScreen(_ sender: Any) {
-        dismiss(animated: true)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "finishRegister" {
+//            if let vc = segue.destination as! LandingViewController {
+//                
+//            }
+//        }
+//    }
+    
+    private func registerFinish() {
+        let storyboard = UIStoryboard(name: "LoginFlow", bundle: .main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LandingVC") as! LandingViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func registerUser(_ sender: Any) {
+        registerFinish()
     }
 }

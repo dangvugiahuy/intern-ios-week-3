@@ -40,7 +40,7 @@ class SongTableViewCell: UITableViewCell {
             songNameLabel.text = song.songName
             songArtistNameLabel.text = song.artistName
             if song.isliked {
-                addSongFavoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                addSongFavoriteButton.isSelected = true
             }
         }
     }
@@ -48,24 +48,23 @@ class SongTableViewCell: UITableViewCell {
     private func setupUI() {
         songImageView.layer.masksToBounds = true
         songImageView.layer.cornerRadius = 20
+        addSongFavoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        addSongFavoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
     }
     
     private func refreshCellState() {
         songImageView.image = UIImage()
         songNameLabel.text = ""
         songArtistNameLabel.text = ""
-        addSongFavoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        addSongFavoriteButton.isSelected = false
     }
     
     
     @IBAction func addSongToFavorite(_ sender: Any) {
-        switch song?.isliked {
-        case true:
-            song?.isliked = false
-            addSongFavoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
-        default:
-            song?.isliked = true
-            addSongFavoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        guard let song = song else {
+            return
         }
+        song.isliked = !song.isliked
+        addSongFavoriteButton.isSelected = song.isliked
     }
 }
