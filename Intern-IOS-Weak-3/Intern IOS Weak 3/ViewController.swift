@@ -30,5 +30,8 @@ class ViewController: BaseViewController {
         self.goto(another: Week3UIScrollViewController())
     }
     
+    @IBAction func gotoNetworkingView(_ sender: Any) {
+        self.goto(another: SongFeedViewController())
+    }
 }
 

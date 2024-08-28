@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SongFeedTopicCollectionViewCell" customModule="Dang_Vu_Gia_Huy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-OK-dyL">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="HVH-tX-UUF"/>
+                        </constraints>
+                        <color key="tintColor" red="0.1791569496" green="0.69387231689999995" blue="0.3124292742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="capsule">
+                            <backgroundConfiguration key="background" strokeWidth="2">
+                                <color key="strokeColor" name="Primary500"/>
+                            </backgroundConfiguration>
+                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bbX-OK-dyL" secondAttribute="trailing" id="Nj5-Ps-GeY"/>
+                <constraint firstAttribute="bottom" secondItem="bbX-OK-dyL" secondAttribute="bottom" id="Olu-qP-dxk"/>
+                <constraint firstItem="bbX-OK-dyL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cRu-jQ-cZI"/>
+                <constraint firstItem="bbX-OK-dyL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rII-Pm-4am"/>
+            </constraints>
+            <size key="customSize" width="217" height="137"/>
+            <point key="canvasLocation" x="222.13740458015266" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Primary500">
+            <color red="0.023529411764705882" green="0.75686274509803919" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

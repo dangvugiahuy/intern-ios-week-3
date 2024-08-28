@@ -22,7 +22,9 @@ final class APIService {
             }
             do {
                 let respone = try JSONDecoder().decode(SongsRespone.self, from: data)
-                completion(.success(respone.results))
+                if let results = respone.feed.results {
+                    completion(.success(results))
+                }
             } catch {
                 completion(.failure(error))
             }
