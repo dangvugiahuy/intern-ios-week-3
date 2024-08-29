@@ -39,7 +39,7 @@ class SongFeedTableViewCell: UITableViewCell {
         if let song = song {
             songNameLabel.text = song.name
             songArtistLabel.text = song.artistName
-            songImageView.load(from: song.artworkUrl100!)
+            songImageView.load(from: song.artworkUrl100)
         }
     }
 }

@@ -69,6 +69,7 @@
                         </constraints>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
                     <constraint firstItem="nzD-99-iKM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IRW-tZ-0v0"/>
                     <constraint firstItem="EGQ-fH-FaF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lih-lb-fXF"/>

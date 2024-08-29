@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SongFeedTopicCollectionViewCell" customModule="Dang_Vu_Gia_Huy" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-OK-dyL">
-                        <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="38" id="HVH-tX-UUF"/>
                         </constraints>
@@ -30,6 +30,9 @@
                             </backgroundConfiguration>
                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="selected:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Izs-EJ-b2d"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -41,7 +44,10 @@
                 <constraint firstItem="bbX-OK-dyL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rII-Pm-4am"/>
             </constraints>
             <size key="customSize" width="217" height="137"/>
-            <point key="canvasLocation" x="222.13740458015266" y="19.366197183098592"/>
+            <connections>
+                <outlet property="topicButton" destination="bbX-OK-dyL" id="Zcg-8h-SB4"/>
+            </connections>
+            <point key="canvasLocation" x="222.13740458015266" y="19.014084507042256"/>
         </collectionViewCell>
     </objects>
     <resources>

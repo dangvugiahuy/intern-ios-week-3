@@ -112,7 +112,7 @@ extension Week3UITableViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if searchTextField.hasText == false {
+        if !searchTextField.hasText {
             refreshSongsTableView()
         }
     }
