@@ -9,9 +9,9 @@ import UIKit
 
 class SongFeedViewController: UIViewController {
     
-    private let topics: [String] = ["Top 10", "Top 50", "US - UK", "Vietnam"]
+    private let topics: [Topics] = Topics.getAllTopics()
     private var songs: [SongsObject] = [SongsObject]()
-    private let service: APIService = APIService()
+    private let service: SongsService = SongsService()
     private var isfilted: Bool = false
 
     @IBOutlet weak var topicCollectionView: UICollectionView!
@@ -49,9 +49,10 @@ class SongFeedViewController: UIViewController {
     }
     
     private func fetchData() {
+        let request = NetWorkRequest(path: "vn/music/most-played/50", value: "songs")
         loadingSongIndicator.isHidden = false
         loadingSongIndicator.startAnimating()
-        service.getSongs { result in
+        service.getSongs(from: request) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):
@@ -117,7 +118,8 @@ extension SongFeedViewController: UITableViewDelegate, UITableViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = topicCollectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as! SongFeedTopicCollectionViewCell
-        cell.topicButton.setTitle(topics[indexPath.row], for: .normal)
+        let topic = topics[indexPath.row]
+        cell.topic = topic
         return cell
     }
     

@@ -22,13 +22,15 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="38" id="HVH-tX-UUF"/>
                         </constraints>
-                        <color key="tintColor" red="0.1791569496" green="0.69387231689999995" blue="0.3124292742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="capsule">
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" name="Primary500"/>
+                        </state>
+                        <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
                             <backgroundConfiguration key="background" strokeWidth="2">
                                 <color key="strokeColor" name="Primary500"/>
                             </backgroundConfiguration>
-                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                         </buttonConfiguration>
                         <connections>
                             <action selector="selected:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Izs-EJ-b2d"/>
