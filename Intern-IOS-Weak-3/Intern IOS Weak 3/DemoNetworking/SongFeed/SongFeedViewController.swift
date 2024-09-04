@@ -49,10 +49,9 @@ class SongFeedViewController: UIViewController {
     }
     
     private func fetchData() {
-        let request = NetWorkRequest(path: "vn/music/most-played/50", value: "songs")
         loadingSongIndicator.isHidden = false
         loadingSongIndicator.startAnimating()
-        service.getSongs(from: request) { result in
+        service.getSongs(inTop: 10) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):

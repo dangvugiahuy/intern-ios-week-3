@@ -11,14 +11,14 @@ class SongsService {
     
     init() {}
     
-    func getSongs(from request: NetWorkRequest, completion: @escaping (Result<[SongsObject], Error>)-> Void) {
+    func getSongs(inTop quantity: Int, completion: @escaping (Result<[SongsObject], Error>)-> Void) {
         DispatchQueue.main.async {
-            BaseService.shared.fetchData(from: request) { [self] result in
-                switch result {
-                case .success(let model):
-                    completion(.success(parseData(data: model)))
-                case .failure(_):
-                    return
+            HttpRequest.shared.request(SongsRouter.getSongs(quantity)) { [self] data, error in
+                if error != nil {
+                    print(error!)
+                    completion(.failure(error!))
+                } else {
+                    completion(.success(parseData(data: data!)))
                 }
             }
         }

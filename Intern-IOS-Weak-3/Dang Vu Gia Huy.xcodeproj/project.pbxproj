@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29034CCF2C87FF1500800279 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034CCE2C87FF1500800279 /* NetworkConstants.swift */; };
+		29034CD12C88012700800279 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034CD02C88012700800279 /* Router.swift */; };
+		29034CD42C880A6500800279 /* SongsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034CD32C880A6500800279 /* SongsRouter.swift */; };
+		29034CD62C8819BB00800279 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034CD52C8819BB00800279 /* HttpRequest.swift */; };
 		29037C8A2C6DD66C00ACC79C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29037C892C6DD66C00ACC79C /* Extensions.swift */; };
 		291C5B042C75D26400E27D3A /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B032C75D26400E27D3A /* UserDetailViewController.xib */; };
 		291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291C5B022C75D26400E27D3A /* UserDetailViewController.swift */; };
@@ -40,14 +44,11 @@
 		29ADD0502C7EC892004D714F /* SongFeedTopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADD04E2C7EC892004D714F /* SongFeedTopicCollectionViewCell.swift */; };
 		29ADD0512C7EC892004D714F /* SongFeedTopicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29ADD04F2C7EC892004D714F /* SongFeedTopicCollectionViewCell.xib */; };
 		29ADD0532C7EE7F7004D714F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADD0522C7EE7F7004D714F /* Feed.swift */; };
-		29E8368F2C816FE7003EB7A1 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8368E2C816FE7003EB7A1 /* BaseService.swift */; };
 		29E836912C817ADE003EB7A1 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E836902C817ADE003EB7A1 /* Topics.swift */; };
 		29E836932C81AABA003EB7A1 /* SongsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E836922C81AABA003EB7A1 /* SongsService.swift */; };
 		29F818292C7D76560024415F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818282C7D76560024415F /* LandingViewController.swift */; };
 		29F8182D2C7D80480024415F /* SongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F8182C2C7D80480024415F /* SongDetailViewController.xib */; };
 		29F8182E2C7D80480024415F /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8182B2C7D80480024415F /* SongDetailViewController.swift */; };
-		29F818322C7D9C260024415F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818312C7D9C260024415F /* Protocols.swift */; };
-		29F818342C7DD0EE0024415F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818332C7DD0ED0024415F /* APIService.swift */; };
 		29F818362C7DD36F0024415F /* SongsRespone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818352C7DD36E0024415F /* SongsRespone.swift */; };
 		29F818382C7DD5260024415F /* SongsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F818372C7DD5260024415F /* SongsObject.swift */; };
 		29FDE9712C6CA57500D948C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDE9702C6CA57500D948C6 /* AppDelegate.swift */; };
@@ -59,6 +60,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29034CCE2C87FF1500800279 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		29034CD02C88012700800279 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		29034CD32C880A6500800279 /* SongsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRouter.swift; sourceTree = "<group>"; };
+		29034CD52C8819BB00800279 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		29037C892C6DD66C00ACC79C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		291C5B022C75D26400E27D3A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		291C5B032C75D26400E27D3A /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
@@ -92,14 +97,11 @@
 		29ADD04E2C7EC892004D714F /* SongFeedTopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongFeedTopicCollectionViewCell.swift; sourceTree = "<group>"; };
 		29ADD04F2C7EC892004D714F /* SongFeedTopicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongFeedTopicCollectionViewCell.xib; sourceTree = "<group>"; };
 		29ADD0522C7EE7F7004D714F /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		29E8368E2C816FE7003EB7A1 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		29E836902C817ADE003EB7A1 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		29E836922C81AABA003EB7A1 /* SongsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsService.swift; sourceTree = "<group>"; };
 		29F818282C7D76560024415F /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		29F8182B2C7D80480024415F /* SongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
 		29F8182C2C7D80480024415F /* SongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongDetailViewController.xib; sourceTree = "<group>"; };
-		29F818312C7D9C260024415F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		29F818332C7DD0ED0024415F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		29F818352C7DD36E0024415F /* SongsRespone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRespone.swift; sourceTree = "<group>"; };
 		29F818372C7DD5260024415F /* SongsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsObject.swift; sourceTree = "<group>"; };
 		29FDE96D2C6CA57500D948C6 /* Dang Vu Gia Huy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dang Vu Gia Huy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,11 +125,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29034CCD2C87FEF400800279 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29034CCE2C87FF1500800279 /* NetworkConstants.swift */,
+				29034CD02C88012700800279 /* Router.swift */,
+				29034CD52C8819BB00800279 /* HttpRequest.swift */,
+				29034CD22C880A4700800279 /* Routers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		29034CD22C880A4700800279 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				29034CD32C880A6500800279 /* SongsRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		29037C882C6DD65700ACC79C /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
 				29037C892C6DD66C00ACC79C /* Extensions.swift */,
-				29F818312C7D9C260024415F /* Protocols.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -292,8 +312,6 @@
 		29E8368D2C816A3D003EB7A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				29F818332C7DD0ED0024415F /* APIService.swift */,
-				29E8368E2C816FE7003EB7A1 /* BaseService.swift */,
 				29E836922C81AABA003EB7A1 /* SongsService.swift */,
 			);
 			path = Services;
@@ -341,6 +359,7 @@
 				29037C8B2C6DE0F000ACC79C /* Models */,
 				29037C882C6DD65700ACC79C /* Ultilities */,
 				29E8368D2C816A3D003EB7A1 /* Services */,
+				29034CCD2C87FEF400800279 /* Network */,
 				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
 				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
 				29FDE97E2C6CA57700D948C6 /* Info.plist */,
@@ -438,16 +457,16 @@
 				298532202C6F499D0049FE97 /* Songs.swift in Sources */,
 				293296972C6CB9FD00F6C8D2 /* Week3UICollectionViewController.swift in Sources */,
 				29FDE9752C6CA57500D948C6 /* ViewController.swift in Sources */,
-				29F818322C7D9C260024415F /* Protocols.swift in Sources */,
 				29ADD04B2C7EC209004D714F /* SongFeedViewController.swift in Sources */,
-				29F818342C7DD0EE0024415F /* APIService.swift in Sources */,
+				29034CD12C88012700800279 /* Router.swift in Sources */,
 				29F818382C7DD5260024415F /* SongsObject.swift in Sources */,
 				29E836932C81AABA003EB7A1 /* SongsService.swift in Sources */,
+				29034CD62C8819BB00800279 /* HttpRequest.swift in Sources */,
 				298532242C6F4F7C0049FE97 /* TrendingMusicCollectionViewCell.swift in Sources */,
-				29E8368F2C816FE7003EB7A1 /* BaseService.swift in Sources */,
 				29F818362C7DD36F0024415F /* SongsRespone.swift in Sources */,
 				298532182C6F31AA0049FE97 /* CustomCollectionViewCell.swift in Sources */,
 				294416E92C7306C000E45736 /* SongTableViewCell.swift in Sources */,
+				29034CCF2C87FF1500800279 /* NetworkConstants.swift in Sources */,
 				29F8182E2C7D80480024415F /* SongDetailViewController.swift in Sources */,
 				2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */,
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,
@@ -457,6 +476,7 @@
 				2964F4872C7C7952001362FE /* RegisterUserViewController.swift in Sources */,
 				291C5B052C75D26400E27D3A /* UserDetailViewController.swift in Sources */,
 				298532142C6F30DE0049FE97 /* Artist.swift in Sources */,
+				29034CD42C880A6500800279 /* SongsRouter.swift in Sources */,
 				29ADD0502C7EC892004D714F /* SongFeedTopicCollectionViewCell.swift in Sources */,
 				2932969C2C6CBA6F00F6C8D2 /* Week3UIStackViewController.swift in Sources */,
 				29A607362C7C2DC800E52BBB /* LoginViewController.swift in Sources */,
