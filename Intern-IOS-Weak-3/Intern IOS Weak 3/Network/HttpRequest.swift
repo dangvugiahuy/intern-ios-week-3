@@ -18,7 +18,7 @@ class HttpRequest {
         if let headers = urlConverted.headers {
             headers.keys.forEach { key in
                 if let value = headers[key] {
-                    request.addValue(urlConverted.headers![key]!, forHTTPHeaderField: key)
+                    request.addValue(value, forHTTPHeaderField: key)
                 }
             }
         }

@@ -10,7 +10,7 @@ import Foundation
 class Topics {
     let name: String
     let value: String
-    let isChoose: Bool
+    var isChoose: Bool
     
     init(name: String, value: String, isChoose: Bool) {
         self.name = name
