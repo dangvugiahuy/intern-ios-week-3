@@ -11,9 +11,9 @@ class SongsService {
     
     init() {}
     
-    func getSongs(inTop quantity: Int, completion: @escaping (Result<[SongsObject], Error>)-> Void) {
+    func getSongs(mediatype: String, type: String, feed: String, completion: @escaping (Result<[SongsObject], Error>)-> Void) {
         DispatchQueue.main.async {
-            HttpRequest.shared.request(SongsRouter.getSongs(quantity)) { [self] data, error in
+            HttpRequest.shared.request(SongsRouter.getSongs(mediatype, type, feed)) { [self] data, error in
                 if error != nil {
                     print(error!)
                     completion(.failure(error!))

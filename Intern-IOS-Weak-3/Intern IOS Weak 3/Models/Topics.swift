@@ -9,21 +9,23 @@ import Foundation
 
 class Topics {
     let name: String
-    let value: String
-    var isChoose: Bool
+    let type: String
+    let mediatype: String
+    let feed: String
     
-    init(name: String, value: String, isChoose: Bool) {
+    init(name: String, type: String, mediatype: String, feed: String) {
         self.name = name
-        self.value = value
-        self.isChoose = isChoose
+        self.type = type
+        self.mediatype = mediatype
+        self.feed = feed
     }
     
     static func getAllTopics() -> [Topics] {
         var topics = [Topics]()
-        topics.append(contentsOf: [Topics(name: "Top 10", value: "10", isChoose: false),
-                                   Topics(name: "Top 25", value: "25", isChoose: false),
-                                   Topics(name: "Top 50", value: "50", isChoose: false),
-                                   Topics(name: "Podcasts", value: "podcasts", isChoose: false)])
+        topics.append(contentsOf: [Topics(name: "Songs", type: "songs", mediatype: "music", feed: "most-played"),
+                                   Topics(name: "Albums", type: "albums", mediatype: "music", feed: "most-played"),
+                                   Topics(name: "Playlists", type: "playlists", mediatype: "music", feed: "most-played"),
+                                   Topics(name: "Podcasts", type: "podcasts", mediatype: "podcasts", feed: "top")])
         return topics
     }
 }

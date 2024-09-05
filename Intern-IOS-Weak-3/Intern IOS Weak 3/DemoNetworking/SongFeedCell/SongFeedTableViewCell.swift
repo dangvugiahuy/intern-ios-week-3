@@ -38,7 +38,7 @@ class SongFeedTableViewCell: UITableViewCell {
     private func setupData() {
         if let song = song {
             songNameLabel.text = song.name
-            songArtistLabel.text = song.artistName
+            songArtistLabel.text = song.artistName ?? ""
             songImageView.load(from: song.artworkUrl100)
         }
     }

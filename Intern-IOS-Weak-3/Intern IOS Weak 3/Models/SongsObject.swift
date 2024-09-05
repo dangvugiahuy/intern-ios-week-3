@@ -8,7 +8,7 @@
 import Foundation
 
 struct SongsObject: Codable, Hashable, Identifiable {
-    let artistName: String
+    let artistName: String?
     let id: String
     let name: String
     let artworkUrl100: String

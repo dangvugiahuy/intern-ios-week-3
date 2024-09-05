@@ -8,18 +8,18 @@
 import Foundation
 
 enum SongsRouter: RequestProtocol {
-    case getSongs(Int)
+    case getSongs(String, String, String)
     
     var path: String {
         switch self {
-        case .getSongs(let quantity):
-            return "/vn/music/most-played/\(quantity)/songs.json"
+        case .getSongs(let mediatype, let type, let feed):
+            return "/vn/\(mediatype)/\(feed)/50/\(type).json"
         }
     }
     
     var method: HTTPMethod {
         switch self {
-        case .getSongs(_):
+        case .getSongs(_, _, _):
             return .GET
         }
     }

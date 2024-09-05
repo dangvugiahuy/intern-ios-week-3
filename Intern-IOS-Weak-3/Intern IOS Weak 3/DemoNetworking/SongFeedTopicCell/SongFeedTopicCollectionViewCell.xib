@@ -17,36 +17,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-OK-dyL">
-                        <rect key="frame" x="0.0" y="6" width="150" height="38"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="38" id="bDJ-SU-41R"/>
-                        </constraints>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal">
-                            <color key="titleColor" name="Primary500"/>
-                        </state>
-                        <connections>
-                            <action selector="selected:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Izs-EJ-b2d"/>
-                        </connections>
-                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLt-iR-c1E">
+                        <rect key="frame" x="10" y="10" width="130" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" name="Primary500"/>
+                        <color key="highlightedColor" name="Greyscale100"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="bbX-OK-dyL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TB4-Gy-5WE"/>
-                <constraint firstAttribute="trailing" secondItem="bbX-OK-dyL" secondAttribute="trailing" id="asa-gz-egd"/>
-                <constraint firstItem="bbX-OK-dyL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mCc-LJ-zXZ"/>
+                <constraint firstAttribute="trailing" secondItem="kLt-iR-c1E" secondAttribute="trailing" constant="10" id="12b-f6-LwS"/>
+                <constraint firstAttribute="bottom" secondItem="kLt-iR-c1E" secondAttribute="bottom" constant="10" id="9PR-lz-JZ7"/>
+                <constraint firstItem="kLt-iR-c1E" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EK8-G2-tWv"/>
+                <constraint firstItem="kLt-iR-c1E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="WCf-Hy-LIa"/>
+                <constraint firstItem="kLt-iR-c1E" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="bGr-Gd-cFC"/>
+                <constraint firstItem="kLt-iR-c1E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="zj1-KL-5K6"/>
             </constraints>
             <size key="customSize" width="217" height="137"/>
             <connections>
-                <outlet property="topicButton" destination="bbX-OK-dyL" id="Zcg-8h-SB4"/>
+                <outlet property="topicLabel" destination="kLt-iR-c1E" id="2AN-2j-REN"/>
             </connections>
             <point key="canvasLocation" x="222.13740458015266" y="19.014084507042256"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <namedColor name="Greyscale100">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Primary500">
             <color red="0.023529411764705882" green="0.75686274509803919" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

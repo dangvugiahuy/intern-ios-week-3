@@ -14,49 +14,35 @@ class SongFeedTopicCollectionViewCell: UICollectionViewCell {
             setupData()
         }
     }
-    
-    @IBOutlet weak var topicButton: UIButton!
+    @IBOutlet weak var topicLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setUI()
+        setupUI()
     }
     
     override func prepareForReuse() {
-        topicButton.isSelected = false
-        self.isSelected = false
+        
     }
     
     private func setupData() {
         if let topic = topic {
-            topicButton.setTitle(topic.name, for: .normal)
-            topicButton.setTitle(topic.name, for: .selected)
-            if topic.isChoose {
-                topicButton.isSelected = true
-                self.isSelected = topic.isChoose
-            }
+            topicLabel.text = topic.name
         }
     }
     
-    private func setUI() {
-        topicButton.setTitleColor(UIColor(named: "Primary500"), for: .normal)
-        topicButton.setTitleColor(.white, for: .selected)
-        topicButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        topicButton.layer.masksToBounds = true
-        topicButton.layer.cornerRadius = topicButton.layer.bounds.height / 2
-        topicButton.layer.borderColor = UIColor(named: "Primary500")?.cgColor
-        topicButton.layer.borderWidth = 2
-    }
-
-    @IBAction func selected(_ sender: Any) {
-        guard let topic = topic else { return }
-        topic.isChoose.toggle()
-        topicButton.isSelected = topic.isChoose
-        self.isSelected = topic.isChoose
-        if topicButton.isSelected {
-            topicButton.backgroundColor = UIColor(named: "Primary500")
-        } else {
-            topicButton.backgroundColor = .clear
-        }
+    private func setupUI() {
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 20
+        self.layer.borderColor = UIColor(named: "Primary500")?.cgColor
+        self.layer.borderWidth = 2
+        
+        let normalView = UIView(frame: self.bounds)
+        normalView.backgroundColor = .clear
+        self.backgroundView = normalView
+        
+        let selectedView = UIView(frame: self.bounds)
+        selectedView.backgroundColor = UIColor(named: "Primary500")
+        self.selectedBackgroundView = selectedView
     }
 }
