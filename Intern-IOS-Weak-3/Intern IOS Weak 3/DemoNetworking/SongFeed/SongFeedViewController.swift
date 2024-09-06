@@ -58,7 +58,6 @@ class SongFeedViewController: UIViewController {
         let searchTableCellNib = UINib(nibName: "SearchHistoryTableViewCell", bundle: .main)
         searchHistoryTableView.register(searchTableCellNib, forCellReuseIdentifier: "searchCell")
         searchHistoryTableView.dataSource = self
-        searchHistoryTableView.delegate = self
         
         let topicsCollectionCellNib = UINib(nibName: "SongFeedTopicCollectionViewCell", bundle: .main)
         topicCollectionView.register(topicsCollectionCellNib, forCellWithReuseIdentifier: "topicCell")
@@ -130,6 +129,13 @@ class SongFeedViewController: UIViewController {
     
     private func updateSearchHistory(_ list: inout [String]) {
         list.append(searchTextField.text!)
+        let set = Set(list)
+        list = Array(set)
+        userdefaults.setValue(list, forKey: "SearchHistory")
+    }
+    
+    private func removeSearchContent(list: inout [String], indexPath: IndexPath) {
+        list.remove(at: indexPath.row)
         userdefaults.setValue(list, forKey: "SearchHistory")
     }
     
@@ -145,7 +151,12 @@ class SongFeedViewController: UIViewController {
     }
 }
 
-extension SongFeedViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension SongFeedViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, SearchHistoryTableViewCellDelegate {
+    
+    func deleteSearchContent(with indexPath: IndexPath) {
+        removeSearchContent(list: &searchHistory, indexPath: indexPath)
+        searchHistoryTableView.deleteRows(at: [indexPath], with: .fade)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return topics.count
@@ -177,8 +188,10 @@ extension SongFeedViewController: UITableViewDelegate, UITableViewDataSource, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch tableView {
         case searchHistoryTableView:
-            let cell = songFeedTableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchHistoryTableViewCell
+            let cell = searchHistoryTableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchHistoryTableViewCell
             cell.searchContent = searchHistory[indexPath.row]
+            cell.indexPath = indexPath
+            cell.delegate = self
             return cell
         default:
             let cell = songFeedTableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SongFeedTableViewCell
@@ -189,19 +202,33 @@ extension SongFeedViewController: UITableViewDelegate, UITableViewDataSource, UI
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 96
+        switch tableView {
+        case songFeedTableView:
+            return 96
+        default:
+            return UITableView.automaticDimension
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch tableView {
+        case searchHistoryTableView:
+            searchTextField.text = searchHistory[indexPath.row]
+        default:
+            return
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchHistoryTableView.isHidden = true
         updateSearchHistory(&searchHistory)
+        searchHistoryTableView.reloadData()
         showSongsListAfterSearch()
         searchTextField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        searchHistoryTableView.reloadData()
         refreshSonglist()
         searchHistoryTableView.isHidden = true
     }
