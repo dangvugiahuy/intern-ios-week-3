@@ -1,13 +1,12 @@
 //
-//  Extension.swift
-//  Intern IOS Weak 3
+//  UIImageViewExtension.swift
+//  Dang Vu Gia Huy
 //
-//  Created by huy.dang on 8/15/24.
+//  Created by Huy Gia on 8/9/24.
 //
 
 import Foundation
 import UIKit
-
 
 extension UIImageView {
     func load(from urlString: String) {

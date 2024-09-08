@@ -33,5 +33,9 @@ class ViewController: BaseViewController {
     @IBAction func gotoNetworkingView(_ sender: Any) {
         self.goto(another: SongFeedViewController())
     }
+    
+    @IBAction func goToFileStorageView(_ sender: Any) {
+        self.goto(another: FileStorageViewController())
+    }
 }
 
