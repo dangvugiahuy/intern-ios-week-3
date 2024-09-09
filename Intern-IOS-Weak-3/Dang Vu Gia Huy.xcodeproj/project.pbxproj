@@ -65,6 +65,7 @@
 		66348DE62C8DE22500509A47 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66348DE52C8DE22500509A47 /* UIImageViewExtension.swift */; };
 		66348DEA2C8DE2E100509A47 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66348DE92C8DE2E100509A47 /* TodoTableViewCell.xib */; };
 		66348DEB2C8DE2E100509A47 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66348DE82C8DE2E100509A47 /* TodoTableViewCell.swift */; };
+		66FCC2F92C8F3F0B004D7052 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FCC2F82C8F3F0B004D7052 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		66348DE52C8DE22500509A47 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		66348DE82C8DE2E100509A47 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		66348DE92C8DE2E100509A47 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		66FCC2F82C8F3F0B004D7052 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,7 +374,6 @@
 		29FDE96F2C6CA57500D948C6 /* Intern IOS Weak 3 */ = {
 			isa = PBXGroup;
 			children = (
-				66348DE42C8DE20700509A47 /* Extensions */,
 				29FDE9702C6CA57500D948C6 /* AppDelegate.swift */,
 				29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */,
 				29FDE9742C6CA57500D948C6 /* ViewController.swift */,
@@ -389,6 +390,7 @@
 				29037C882C6DD65700ACC79C /* Ultilities */,
 				29E8368D2C816A3D003EB7A1 /* Services */,
 				29034CCD2C87FEF400800279 /* Network */,
+				66348DE42C8DE20700509A47 /* Extensions */,
 				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
 				29FDE97E2C6CA57700D948C6 /* Info.plist */,
 			);
@@ -410,6 +412,7 @@
 			children = (
 				66348DE52C8DE22500509A47 /* UIImageViewExtension.swift */,
 				29787A262C8EADB10045BB8A /* FileManagerExtension.swift */,
+				66FCC2F82C8F3F0B004D7052 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				294416E92C7306C000E45736 /* SongTableViewCell.swift in Sources */,
 				29034CCF2C87FF1500800279 /* NetworkConstants.swift in Sources */,
 				66348DE62C8DE22500509A47 /* UIImageViewExtension.swift in Sources */,
+				66FCC2F92C8F3F0B004D7052 /* StringExtension.swift in Sources */,
 				29F8182E2C7D80480024415F /* SongDetailViewController.swift in Sources */,
 				2985321D2C6F45170049FE97 /* ArtistDetailViewController.swift in Sources */,
 				294416E52C73040800E45736 /* BaseViewController.swift in Sources */,

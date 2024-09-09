@@ -50,7 +50,7 @@ class FileStorageViewController: UIViewController {
     }
     
     private func updateTodoTask(list: inout [Todo], index: Int, task: Todo) {
-        list[index] =  task
+        list[index] = task
     }
     
     private func dropTodoList(list: inout [Todo], index: Int) {
@@ -74,8 +74,18 @@ class FileStorageViewController: UIViewController {
 extension FileStorageViewController: UITableViewDelegate, UITableViewDataSource, TodoTableViewCellDelegate {
     
     func updateTask(with task: Todo, at indexPath: IndexPath) {
-        updateTodoTask(list: &todoList, index: indexPath.row, task: task)
-        todoListTableView.reloadData()
+        do {
+            updateTodoTask(list: &todoList, index: indexPath.row, task: task)
+            todoListTableView.reloadData()
+            let data = try JSONEncoder().encode(todoList)
+            if FileManager().writeDataTo(file: fileName, with: data) {
+                print("Write Succsess")
+            } else {
+                print("write Fail")
+            }
+        } catch {
+            print("update Task fail")
+        }
     }
     
     func dropCell(with indexPath: IndexPath) {

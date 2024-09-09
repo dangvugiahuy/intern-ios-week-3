@@ -33,6 +33,7 @@ extension FileManager {
                 return
             }
         } else {
+            print(filePath)
             return
         }
     }
