@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileStorageViewController" customModule="Dang_Vu_Gia_Huy" customModuleProvider="target">
             <connections>
+                <outlet property="emptyTodoListView" destination="dnE-97-xBK" id="Xzc-Je-7Yn"/>
+                <outlet property="todoListTableView" destination="mVd-g6-ylc" id="lqy-qj-HmA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,29 +35,59 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                         <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="newReminder:" destination="-1" eventType="touchUpInside" id="wh7-At-1VU"/>
+                    </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-g6-ylc">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-g6-ylc">
                     <rect key="frame" x="16" y="112.33333333333331" width="361" height="652"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="z0A-2K-3wt"/>
+                        <outlet property="delegate" destination="-1" id="tMX-Xm-OGX"/>
+                    </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnE-97-xBK">
+                    <rect key="frame" x="16" y="112.33333333333331" width="361" height="652"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-5M-Gw7">
+                            <rect key="frame" x="121" y="314.33333333333337" width="119.33333333333331" height="23.666666666666686"/>
+                            <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="18"/>
+                            <color key="textColor" name="Greyscale500"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tUc-5M-Gw7" firstAttribute="centerX" secondItem="dnE-97-xBK" secondAttribute="centerX" id="J4B-Qj-REk"/>
+                        <constraint firstItem="tUc-5M-Gw7" firstAttribute="centerY" secondItem="dnE-97-xBK" secondAttribute="centerY" id="iuD-bn-Le9"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="mVd-g6-ylc" firstAttribute="top" secondItem="5p2-3g-gpt" secondAttribute="bottom" constant="16" id="9Xl-cx-yX1"/>
+                <constraint firstItem="dnE-97-xBK" firstAttribute="height" secondItem="mVd-g6-ylc" secondAttribute="height" id="EEK-dj-lNB"/>
                 <constraint firstItem="2JE-uf-5Ed" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GOh-Oe-5tO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2JE-uf-5Ed" secondAttribute="bottom" id="NAT-9C-7ar"/>
+                <constraint firstItem="dnE-97-xBK" firstAttribute="width" secondItem="mVd-g6-ylc" secondAttribute="width" id="Spi-r8-hOV"/>
+                <constraint firstItem="dnE-97-xBK" firstAttribute="centerX" secondItem="mVd-g6-ylc" secondAttribute="centerX" id="XtC-iw-kms"/>
                 <constraint firstItem="2JE-uf-5Ed" firstAttribute="top" secondItem="mVd-g6-ylc" secondAttribute="bottom" constant="16" id="ZG3-kf-KQS"/>
+                <constraint firstItem="dnE-97-xBK" firstAttribute="top" secondItem="5p2-3g-gpt" secondAttribute="bottom" constant="16" id="br7-ty-Ylh"/>
                 <constraint firstItem="mVd-g6-ylc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nI6-hd-8ym"/>
                 <constraint firstItem="5p2-3g-gpt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rTb-BJ-Vef"/>
                 <constraint firstItem="5p2-3g-gpt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sel-S6-DI3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mVd-g6-ylc" secondAttribute="trailing" constant="16" id="xhR-CH-uXX"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="20"/>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="Greyscale500">
+            <color red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Greyscale900">
             <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
