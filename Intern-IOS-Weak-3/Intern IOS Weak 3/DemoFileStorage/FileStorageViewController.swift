@@ -37,15 +37,22 @@ class FileStorageViewController: UIViewController {
     }
     
     private func getTodoList(list: inout [Todo]) {
-        
+        do {
+            let data = FileManager().readDataFrom(file: fileName)
+            list = try JSONDecoder().decode([Todo].self, from: data)
+        } catch {
+            return
+        }
     }
     
     private func checkEmptyTodoList() {
-        switch todoList.isEmpty {
-        case true:
-            emptyTodoListView.isHidden = false
-        default:
-            emptyTodoListView.isHidden = true
+        UIView.animate(withDuration: 1) {
+            switch self.todoList.isEmpty {
+            case true:
+                self.emptyTodoListView.isHidden = false
+            default:
+                self.emptyTodoListView.isHidden = true
+            }
         }
     }
     
@@ -59,7 +66,9 @@ class FileStorageViewController: UIViewController {
     
     @IBAction func newReminder(_ sender: Any) {
         if !emptyTodoListView.isHidden {
-            emptyTodoListView.isHidden.toggle()
+            UIView.animate(withDuration: 0.2) {
+                self.emptyTodoListView.isHidden.toggle()
+            }
         }
         todoList.insert(Todo(), at: todoList.endIndex)
         let index = todoList.count - 1
@@ -108,5 +117,29 @@ extension FileStorageViewController: UITableViewDelegate, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            todoListTableView.beginUpdates()
+            todoList.remove(at: indexPath.row)
+            todoListTableView.deleteRows(at: [indexPath], with: .fade)
+            todoListTableView.endUpdates()
+            checkEmptyTodoList()
+            do {
+                let data = try JSONEncoder().encode(todoList)
+                if FileManager().writeDataTo(file: fileName, with: data) {
+                    print("Write Succsess")
+                } else {
+                    print("write Fail")
+                }
+            } catch {
+                print("update Task fail")
+            }
+        }
     }
 }

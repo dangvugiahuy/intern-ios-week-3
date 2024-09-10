@@ -52,11 +52,15 @@ class TodoTableViewCell: UITableViewCell {
         if let todoTask = todoTask {
             taskContentTextView.text = todoTask.task
             checkCompleteTaskButton.isSelected = todoTask.isCompleted
+            taskContentTextView.isEditable = !checkCompleteTaskButton.isSelected
         }
     }
     
     @IBAction func checkCompleteTask(_ sender: Any) {
         checkCompleteTaskButton.isSelected.toggle()
+        taskContentTextView.isEditable.toggle()
+        todoTask?.isCompleted = checkCompleteTaskButton.isSelected
+        delegate?.updateTask(with: todoTask!, at: indexPath!)
     }
 }
 
