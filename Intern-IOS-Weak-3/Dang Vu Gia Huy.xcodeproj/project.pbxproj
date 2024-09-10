@@ -165,7 +165,6 @@
 		29037C882C6DD65700ACC79C /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
-				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -251,6 +250,16 @@
 				294416E42C73040800E45736 /* BaseViewController.xib */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		2947C33A2C90354700C9C3FF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
+				29FDE97E2C6CA57700D948C6 /* Info.plist */,
+				29FDE9792C6CA57700D948C6 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		298532152C6F31440049FE97 /* CustomCollectionCell */ = {
@@ -374,6 +383,9 @@
 		29FDE96F2C6CA57500D948C6 /* Intern IOS Weak 3 */ = {
 			isa = PBXGroup;
 			children = (
+				2947C33A2C90354700C9C3FF /* Resource */,
+				29037C882C6DD65700ACC79C /* Ultilities */,
+				29034CCD2C87FEF400800279 /* Network */,
 				29FDE9702C6CA57500D948C6 /* AppDelegate.swift */,
 				29FDE9722C6CA57500D948C6 /* SceneDelegate.swift */,
 				29FDE9742C6CA57500D948C6 /* ViewController.swift */,
@@ -387,12 +399,8 @@
 				29ADD0422C7EBE1E004D714F /* DemoNetworking */,
 				66335A9F2C8D9A23000418F2 /* DemoFileStorage */,
 				29037C8B2C6DE0F000ACC79C /* Models */,
-				29037C882C6DD65700ACC79C /* Ultilities */,
 				29E8368D2C816A3D003EB7A1 /* Services */,
-				29034CCD2C87FEF400800279 /* Network */,
 				66348DE42C8DE20700509A47 /* Extensions */,
-				29FDE97B2C6CA57700D948C6 /* LaunchScreen.storyboard */,
-				29FDE97E2C6CA57700D948C6 /* Info.plist */,
 			);
 			path = "Intern IOS Weak 3";
 			sourceTree = "<group>";
