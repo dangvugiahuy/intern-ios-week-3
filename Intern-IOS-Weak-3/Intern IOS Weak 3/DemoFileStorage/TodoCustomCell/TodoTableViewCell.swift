@@ -10,6 +10,7 @@ import UIKit
 protocol TodoTableViewCellDelegate: AnyObject {
     func dropCell(with indexPath: IndexPath)
     func updateTask(with task: Todo, at indexPath: IndexPath)
+    func updateHeightTaskcell(_ cell: TodoTableViewCell, _ textView: UITextView)
 }
 
 class TodoTableViewCell: UITableViewCell {
@@ -29,16 +30,9 @@ class TodoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.sizeToFit()
         checkCompleteTaskButton.setImage(UIImage(systemName: "circle"), for: .normal)
         checkCompleteTaskButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .selected)
         taskContentTextView.delegate = self
-        taskContentTextView.autoresizingMask = .flexibleHeight
-        taskContentTextView.isScrollEnabled = false
-    }
-    
-    override var intrinsicContentSize: CGSize {
-        return .zero
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -77,5 +71,11 @@ extension TodoTableViewCell: UITextViewDelegate {
             return false
         }
         return true
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if let delegate = delegate {
+            delegate.updateHeightTaskcell(self, taskContentTextView)
+        }
     }
 }

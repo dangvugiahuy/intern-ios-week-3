@@ -17,6 +17,7 @@ class Week3UICollectionViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBarItem()
         setupCollectionView(collection: artistCollectionView, nibName: "CustomCollectionViewCell", CellId: "artistCell")
         setupCollectionView(collection: trendingMusicList, nibName: "TrendingMusicCollectionViewCell", CellId: "musicCell")
     }

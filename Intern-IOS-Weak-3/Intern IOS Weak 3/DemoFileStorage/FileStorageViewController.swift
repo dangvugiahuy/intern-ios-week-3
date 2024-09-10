@@ -82,6 +82,20 @@ class FileStorageViewController: UIViewController {
 
 extension FileStorageViewController: UITableViewDelegate, UITableViewDataSource, TodoTableViewCellDelegate {
     
+    func updateHeightTaskcell(_ cell: TodoTableViewCell, _ textView: UITextView) {
+        let size = textView.bounds.size
+        let newSize = todoListTableView.sizeThatFits(CGSize(width: cell.bounds.size.width, height: CGFloat.greatestFiniteMagnitude))
+        if size.height != newSize.height {
+            UIView.setAnimationsEnabled(false)
+            todoListTableView?.beginUpdates()
+            todoListTableView?.endUpdates()
+            UIView.setAnimationsEnabled(true)
+            if let indexPath = todoListTableView.indexPath(for: cell) {
+                todoListTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            }
+        }
+    }
+    
     func updateTask(with task: Todo, at indexPath: IndexPath) {
         do {
             updateTodoTask(list: &todoList, index: indexPath.row, task: task)
