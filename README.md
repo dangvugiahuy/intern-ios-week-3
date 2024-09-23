@@ -2,7 +2,7 @@
   <img width="200" height="200" src="https://github.com/dangvugiahuy/chumeodiHERE/blob/main/img/s3logo.jpg">
 </p>
 
-# S3 iOS Developer intern project's week 3, 4, 5
+# S3Corp iOS Developer intern project's week 3, 4, 5
 Complete the topics of Fundamentals in iOS Development through small functions inside the project
 ## Topics
 ### UITableView
